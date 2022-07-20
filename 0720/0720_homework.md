@@ -8,7 +8,7 @@ range와 slicing을 활용하여 1부터 50까지의 숫자 중,
 홀수로만 이루어진 리스트를 만드시오
 
 one = [i for i in range(1, 51, 2)]
-print(one)
+print(one) 
 
 
 3. 반복문으로 네모 출력
