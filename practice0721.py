@@ -24,3 +24,13 @@
 #     return number
 
 # print(get_secret_number('happy'))
+
+def my_avg(*args):
+    result = 0
+    for sum in args:
+        result += sum
+        result_avg = result // len(args)
+    return result_avg
+
+print(my_avg(77, 83, 95, 80, 70))
+
