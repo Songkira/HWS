@@ -58,6 +58,7 @@ all_list_sum 함수를 built-in 함수인 sum() 함수를 사용하지 않고 �
 
 all_list_sum([[1], [2, 3], [4, 5, 6], [7, 8, 9, 10]]) # => 55
 
+
 5. 숫자의 의미
 정수로 이루어진 list를 전달 받아, 각 정수에 대응되는 아스키 문자를 이어붙인
 문자열을 반환하는 get_secret_word 함수를 작성하시오. 
@@ -65,12 +66,27 @@ all_list_sum([[1], [2, 3], [4, 5, 6], [7, 8, 9, 10]]) # => 55
 
 get_secret_word([83, 115, 65, 102, 89]) # => ‘SsAfY’
 
+def get_secret_word(x):
+    word = ''
+    for asc in x:
+        word += chr(asc)
+    return word
+
+print(get_secret_word([83, 115, 65, 102, 89]))
 
 6. 내 이름은 몇일까?
 문자열을 전달 받아 해당 문자열의 각 문자에 대응되는 아스키 숫자들의 합을 반환하는
 get_secret_number 함수를 작성하시오. 단, 문자열은 A~Z, a~z로만 구성되어 있다.
 
 get_secret_number(’happy’) # => 546
+
+def get_secret_number(x):
+    number = 0
+    for asc in x:
+        number += ord(asc)
+    return number
+
+print(get_secret_number('happy'))
 
 7. 강한 이름
 문자열 2개를 전달 받아 두 문자열의 각 문자에 대응되는 아스키 숫자들의 합을
@@ -79,3 +95,24 @@ get_secret_number(’happy’) # => 546
 
 get_strong_word(’z’, ’a’) # => ‘z’
 get_strong_word(’delilah’, ’dixon’) # => ‘delila
+
+def get_strong_word(args1,args2):
+    que1 = 0
+    que2 = 0
+       
+    for i in args1:
+        sym1=ord(i)
+        que1 += sym1
+    
+    for i in args2:
+        sym2=ord(i)
+        que2 += sym2      
+        
+    if que1>que2:
+        print(args1)
+    else : 
+        print(args2)
+        
+
+get_strong_word('z', 'a')
+get_strong_word('delilah', 'dixon')
