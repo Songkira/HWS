@@ -22,6 +22,14 @@ list_sum 함수를 built-in 함수인 sum() 함수를 사용하지 않고 작성
 
 list_sum([1, 2, 3, 4, 5]) # => 15
 
+def list_sum(*args):
+    result = 0
+    args = set(*args)
+    for number in args:
+        result += number
+    return result
+
+print(list_sum([1, 2, 3, 4, 5]))
 
 3. Dictionary로 이루어진 List의 합 구하기
 Dictionary로 이루어진 list를 전달 받아 모든 dictionary의 'age' key에 해당하는 value
@@ -31,6 +39,16 @@ Dictionary로 이루어진 list를 전달 받아 모든 dictionary의 'age' key�
 dict_list_sum([{’name’: ’kim’, ’age’: 12},
 {’name’: ‘lee’, ’age’: 4}]) # => 1
 
+lst = [{'name': 'kim', 'age': 12},
+{'name': 'lee', 'age': 4}]
+
+def dict_list_sum(x):
+    result = 0
+    for i in range(len(x)):
+        result += x[i]['age']
+        return result
+
+print(dict_list_sum(lst))
 
 4. 2차원 List의 전체 합 구하기
 정수로만 이루어진 2차원 list를 전달 받아 해당 list의 모든 요소들의 합을 반환하는
