@@ -5,7 +5,7 @@ duplicated_letters 함수를 작성하시오
 duplicated_letters(‘apple’) # => [‘p’]
 duplicated_letters(‘banana’) # => [’a’, ‘n’]
 ```
-```
+```python
 def duplicated_letters(word):
     word_lst = []
     word_2 = []
@@ -26,7 +26,7 @@ def duplicated_letters(word):
 low_and_up(‘apple’) # => aPpLe
 low_and_up(‘banana’) # => bAnAnA
 ```
-```
+```python
 def low_and_up(word):
     word_up = []
     for i in range(len(word)):
@@ -45,7 +45,7 @@ def low_and_up(word):
 lonely([1, 1, 3, 3, 0, 1, 1]) # => [1, 3, 0, 1]
 lonely([4, 4, 4, 3, 3]) # => [4, 3]
 ```
-```
+```python
 def lonely(number):
     alone = []
     alone.append(number[0])
