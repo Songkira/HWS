@@ -28,15 +28,15 @@
 # print(low_and_up('banana')) # => bAnAnA
 
 #-----------------------------------------
-# def lonely(number):
-#     alone = []
-#     alone.append(number[0])
-#     for i in range(len(number)):
-#         if alone[-1] != number[i]:
-#             alone.append(number[i])
-#         else:
-#             pass
-#     return alone
+def lonely(number):
+    alone = []
+    alone.append(number[0])
+    for i in range(len(number)):
+        if alone[-1] != number[i]:
+            alone.append(number[i])
+        else:
+            pass
+    return alone
 
 
 # print(lonely([1, 1, 3, 3, 0, 1, 1])) # => [1, 3, 0, 1]
