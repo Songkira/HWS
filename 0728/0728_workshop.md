@@ -1,32 +1,36 @@
 1. 도형 만들기
-아래의 명세를 읽고 Python 클래스를 활용하여 점(Point)과 사각형(Rectangle)을
-표현하시오.
-```python
-class Point:
-
+   아래의 명세를 읽고 Python 클래스를 활용하여 점(Point)과 사각형(Rectangle)을
+   표현하시오.
+   
+   ```python
+   class Point:
+   
     def __init__(self, x, y):
         self.x = x
         self.y = y
-
+   
     def __int__(self):
         return self.x, self.y
+   ```
 
 class Rectangle:
 
-    def __init__(self, p1, p2):
-        self.p1 = p1
-        self.p2 = p2
+```python
+def __init__(self, p1, p2):
+    self.p1 = p1
+    self.p2 = p2
 
-    def get_area(self):
-        return abs((self.p2.x - self.p1.x) * (self.p1.y - self.p2.y))
-    
-    def get_perimeter(self):
-        return 2*(abs(self.p2.x-self.p1.x) + abs(self.p1.y- self.p2.y))
+def get_area(self):
+    return abs((self.p2.x - self.p1.x) * (self.p1.y - self.p2.y))
 
-    def is_square(self):
-        return abs(self.p2.x-self.p1.x) == abs(self.p1.y-self.p2.y)
+def get_perimeter(self):
+    return 2*(abs(self.p2.x-self.p1.x) + abs(self.p1.y- self.p2.y))
+
+def is_square(self):
+    return abs(self.p2.x-self.p1.x) == abs(self.p1.y-self.p2.y)
 ```
 
+```python
 ```python
 p1 = Point(1, 3)
 p2 = Point(3, 1)

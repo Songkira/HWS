@@ -70,15 +70,18 @@ class Rectangle:
     def __init__(self, p1, p2):
         self.p1 = p1
         self.p2 = p2
+        # self.width = abs(p1.x - p2.x) / abs(self.p1.x - self.p2.x)
+        # self.heigth = abs(p1.y - p2.y) / abs(self.p1.y - self.p2.y)
 
     def get_area(self):
         return abs((self.p2.x - self.p1.x) * (self.p1.y - self.p2.y))
-    
+        # return self.width * self.heigth
     def get_perimeter(self):
         return 2*(abs(self.p2.x-self.p1.x) + abs(self.p1.y- self.p2.y))
-
+        # return 2 * (self.width + self.heigth)
     def is_square(self):
         return abs(self.p2.x-self.p1.x) == abs(self.p1.y-self.p2.y)
+        # return self.width == self.height
 
 p1 = Point(1, 3)
 p2 = Point(3, 1)
