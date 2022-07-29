@@ -11,22 +11,20 @@
 * [구글 스타일 가이드](https://github.com/google/styleguide/blob/gh-pages/pyguide.md)
 * [Tensorflow 스타일 가이드](https://www.tensorflow.org/community/contribute/code_style?hl=ko)
 
-
-
 # 기초 문법(Syntax)
+
 ## 들여쓰기(Indentation)
 
 코드 블록을 구분할 때, 중괄호 ({,}) 대신 <들여쓰기 (identation)>를 사용합니다.
 
 들여쓰기를 할 때는 4칸(space키 4번) 혹은 1탭 (Tab키 1번)을 입력합니다.
+
 - 주의! 한 코드 안에서는 반드시 한 종류의 들여쓰기를 사용합니다.
 - 원칙적으로는 공백 (빈칸, space) 사용을 권장합니다. * PEP8 권장사항
-
 
 ```python
 # 일반적인 코드 작성 스타일
 ```
-
 
 ```python
 print('hello')
@@ -45,19 +43,19 @@ b = 'banana'
     hello
     world
     True
-    
 
 ## 변수(Variable)
 
-### 변수 
+### 변수
+
 컴퓨터 메모리 어딘가에 저장되어 있는 객체를 참조하기 위해 사용되는 이름을 의미합니다.
+
 - 객체(object) : 숫자, 문자, 클래스 등 **값을 가지고 있는 모든 것**을 말합니다.
-    - 파이썬은 객체지향 언어이며, 모든 것이 객체로 구현되어 있습니다.
+  - 파이썬은 객체지향 언어이며, 모든 것이 객체로 구현되어 있습니다.
 - 동일 변수에 다른 객체를 언제든 할당할 수 있습니다.
-    - 즉, 참조하는 객체가 바뀔 수 있기 때문에 '변수' 라고 부릅니다.
+  - 즉, 참조하는 객체가 바뀔 수 있기 때문에 '변수' 라고 부릅니다.
 
 <center><img src="https://user-images.githubusercontent.com/18046097/61179855-0c8d0200-a646-11e9-9e9e-2c6df0504296.png", alt="variable"/></center>
-
 
 <center><img src="https://user-images.githubusercontent.com/18046097/61179857-13b41000-a646-11e9-9a88-8487df4eaf52.png", alt="box"/></center>
 
@@ -69,53 +67,36 @@ b = 'banana'
 
 * 해당 값의 메모리 주소를 확인하기 위해서는 `id()`를 활용합니다.
 
-
 ```python
 # 변수 x에 임의의 문자열을 할당해봅시다.
 x = '고양이는 귀엽다'
 ```
 
-
 ```python
 # type(x)를 실행하여 변수 x에 할당된 값의 데이터 타입을 확인해 봅시다.
 ```
-
 
 ```python
 type(x)
 ```
 
-
-
-
     str
-
-
-
 
 ```python
 # id(x)를 실행하여 변수 x의 고유 메모리 주소를 확인해봅시다.
 ```
 
-
 ```python
 id(x)
 ```
 
-
-
-
     2096632243376
 
-
-
 ### 변수 연산
-
 
 ```python
 # i, j, s 변수에 각각 5, 3, '파이썬'을 할당해봅시다.
 ```
-
 
 ```python
 i = 5
@@ -123,28 +104,19 @@ j = 3
 s = '파이썬'
 ```
 
-
 ```python
 # 변수 i와 j를 더해봅시다.
 ```
-
 
 ```python
 i + j
 ```
 
-
-
-
     8
-
-
-
 
 ```python
 # 변수 i에 i - j를 할당해봅시다.
 ```
-
 
 ```python
 i = i - j
@@ -152,106 +124,69 @@ print(i)
 ```
 
     2
-    
-
 
 ```python
 # 변수 j에 -2를 할당하고 i * j를 실행해봅시다.
 ```
-
 
 ```python
 j = -2
 i * j
 ```
 
-
-
-
     -4
-
-
-
 
 ```python
 # i * j / 3 을 실행하여 결과를 확인해봅시다.
 ```
 
-
 ```python
 i * j / 3
 ```
 
-
-
-
     -1.3333333333333333
-
-
-
 
 ```python
 # 문자열 '안녕'과 변수 s를 더해봅시다.
 ```
 
-
 ```python
 '안녕' + s
 ```
 
-
-
-
     '안녕파이썬'
-
-
-
 
 ```python
 # 변수 s에 s * 3을 할당하고 결과를 확인해봅시다.
 ```
-
 
 ```python
 s = s * 3
 s
 ```
 
-
-
-
     '파이썬파이썬파이썬'
-
-
-
 
 ```python
 # 변수 s에 문자열 'Python'을 할당하고
 # s + ' is fun'을 실행하여 결과를 확인해봅시다.
 ```
 
-
 ```python
 s = 'Python'
 s + 'is fun'
 ```
 
-
-
-
     'Pythonis fun'
 
-
-
 ### 변수 할당
-* 같은 값을 동시에 할당할 수 있습니다.
 
+* 같은 값을 동시에 할당할 수 있습니다.
 
 ```python
 # 같은 값을 x와 y에 동시에 할당해봅시다.
 # 그리고 print를 이용하여 x, y 값을 확인해봅시다.
 ```
-
 
 ```python
 x, y = 5, 5
@@ -259,98 +194,79 @@ print(x, y)
 ```
 
     5 5
-    
 
 * 다른 값을 동시에 할당 가능합니다.
-
 
 ```python
 # 두 개의 변수 x, y에 값 1, 2를 동시에 할당해봅시다.
 # 그리고 print를 이용하여 x, y 값을 확인해봅시다.
 ```
 
-
 ```python
 x, y = 1, 2
 x, y
 ```
 
-
-
-
     (1, 2)
-
-
-
 
 ```python
 # 두 개의 변수 x, y에 값 1을 할당해봅시다.
 # 두 개의 변수에 하나의 값을 할당했을 때의 오류를 확인해봅시다.
 ```
 
-
 ```python
 x , y = 1
 x, y
 ```
 
-
     ---------------------------------------------------------------------------
-
+    
     TypeError                                 Traceback (most recent call last)
-
+    
     Input In [29], in <cell line: 1>()
     ----> 1 x , y = 1
           2 x, y
     
-
+    
     TypeError: cannot unpack non-iterable int object
-
-
 
 ```python
 # 두 개의 변수 x, y에 값 1, 2, 3을 동시에 할당해봅시다.
 # 두 개의 변수에 세 개의 값을 할당했을 때의 오류를 확인해봅시다.
 ```
 
-
 ```python
 x, y = 1, 2, 3
 x, y
 ```
 
-
     ---------------------------------------------------------------------------
-
+    
     ValueError                                Traceback (most recent call last)
-
+    
     Input In [30], in <cell line: 1>()
     ----> 1 x, y = 1, 2, 3
           2 x, y
     
-
+    
     ValueError: too many values to unpack (expected 2)
 
-
 ### 실습 문제
-- x = 10, y = 20 일 때, 각각 값을 바꿔서 저장하는 코드를 작성하세요.
 
+- x = 10, y = 20 일 때, 각각 값을 바꿔서 저장하는 코드를 작성하세요.
 
 ```python
 x, y = 10, 20
 ```
-
 
 ```python
 # 변수 x와 y의 값을 바꿔봅시다.
 # 그리고 결과를 print를 이용해 확인해봅시다.
 ```
 
-
 ```python
 # 방법1 : 임시 변수 활용
 ```
-
 
 ```python
 x = 20
@@ -358,30 +274,18 @@ y = 10
 x, y
 ```
 
-
-
-
     (20, 10)
-
-
-
 
 ```python
 # 방법 2 : Pythonic
 ```
-
 
 ```python
 x, y = 30, 10
 x, y
 ```
 
-
-
-
     (30, 10)
-
-
 
 ### 식별자(Identifiers)
 
@@ -397,7 +301,6 @@ x, y
 False, None, True, and, as, assert, async, await, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
 ```
 
-
 ```python
 # 키워드들을 직접 확인해봅시다.
 # import 구문을 사용하여 keyword를 불러옵니다.
@@ -405,23 +308,19 @@ False, None, True, and, as, assert, async, await, break, class, continue, def, d
 # import 구문에 대한 자세한 내용은 모듈 챕터에서 학습하겠습니다.
 ```
 
-
 ```python
 import keyword
 print(keyword.kwlist)
 ```
 
     ['False', 'None', 'True', '__peg_parser__', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
-    
 
-*  내장함수나 모듈 등의 이름으로도 만들면 안됩니다.
+* 내장함수나 모듈 등의 이름으로도 만들면 안됩니다.
 - 기존의 이름에 다른 값을 할당하게 되므로 더 이상 동작하지 않게됩니다.
-
 
 ```python
 # 내장함수의 이름을 사용하면 어떤일이 일어나는지 확인해봅시다.
 ```
-
 
 ```python
 # print는 값을 출력해주는 내장함수(Built-in function)입니다.
@@ -430,8 +329,6 @@ print(5)
 ```
 
     5
-    
-
 
 ```python
 # 변수 print에 문자열 'hi'를 할당합니다. 
@@ -439,12 +336,10 @@ print(5)
 # print는 'hi'라는 값을 가지는 변수로 할당되었기 때문에 이전의 출력 기능을 수행하지 못합니다.
 ```
 
-
 ```python
 #print = 'hi'
 #print(5)
 ```
-
 
 ```python
 # 뒤에서 진행될 코드에 영향이 갈 수 있기 때문에 방금 생성한 print 변수를 삭제합니다.
@@ -454,42 +349,38 @@ print(5)
 # 자세한 내용은 namespace 파트에서 확인해봅시다.
 ```
 
-
 ```python
 del print
-
 ```
 
-
     ---------------------------------------------------------------------------
-
+    
     NameError                                 Traceback (most recent call last)
-
+    
     Input In [44], in <cell line: 1>()
     ----> 1 del print
     
-
+    
     NameError: name 'print' is not defined
-
 
 ## 사용자 입력(input)
 
 ### input([prompt])
+
 * 사용자로부터 값을 즉시 입력 받을 수 있는 파이썬 내장함수입니다.
 * 대괄호([]) 안에 문자열을 입력하면 해당 문자열을 출력할 수 있습니다.
-    - 단, 대괄호는 생략합니다.
+  - 단, 대괄호는 생략합니다.
+    
     ```python
     # ex)
     input('값을 입력해 주세요. : ')
     ```
-
 
 ```python
 # input()을 사용해 봅시다.
 # data 변수에 input()의 반환값을 할당합니다.
 # print 함수를 이용하여 data 변수에 담긴 값을 출력해 봅시다.
 ```
-
 
 ```python
 question =input('값을 입력해 주세요. : ')
@@ -499,15 +390,11 @@ print(data)
 
     값을 입력해 주세요. : 123
     123
-    
-
 
 ```python
-
 # 문자열 '이름을 입력 해 주세요. : '를 출력하는 input 함수를 변수 name에 할당합니다.
 # print 함수를 이용하여 name 변수에 담긴 값을 출력해 봅시다.
 ```
-
 
 ```python
 name =input('이름을 입력해 주세요. : ')
@@ -516,14 +403,13 @@ print(name)
 
     이름을 입력해 주세요. : 강한나
     강한나
-    
 
 * 반환값은 항상 문자열의 형태로 반환됩니다.
 
 ```python
 >>> num = input('숫자를 입력 해 주세요. : ')
 숫자를 입력 해 주세요. : 100
-    
+
 >>> print(num)
 '100'
 
@@ -531,38 +417,30 @@ print(name)
 <class 'str'>
 ```
 
-
 ```python
 # input()으로 입력 받은 값의 type을 출력해 봅시다.
 ```
-
 
 ```python
 type(name)
 type(data)
 ```
 
-
-
-
     str
-
-
 
 ## 주석(Comment)
 
 * 한 줄 주석은 `#`으로 표현합니다. 
 
 * 여러 줄의 주석은 
-    1. 한 줄 씩 `#`을 사용해서 표현하거나,
-    2. `"""` 또는 `'''`(여러줄 문자열, multiline string)으로 표현할 수 있습니다.
-    (multiline은 주로 함수/클래스를 설명(docstring)하기 위해 활용됩니다.)
-
+  
+  1. 한 줄 씩 `#`을 사용해서 표현하거나,
+  2. `"""` 또는 `'''`(여러줄 문자열, multiline string)으로 표현할 수 있습니다.
+     (multiline은 주로 함수/클래스를 설명(docstring)하기 위해 활용됩니다.)
 
 ```python
 # 주석을 연습해봅시다. 
 ```
-
 
 ```python
 # print('hello') # 이 줄은 실행되지 않습니다.
@@ -570,13 +448,10 @@ print('world')
 ```
 
     world
-    
-
 
 ```python
 # 여러줄 주석을 multiline string을 활용하여 연습해봅시다.
 ```
-
 
 ```python
 """
@@ -622,22 +497,20 @@ print(multi_line_string3)
     this is line number 4
     this is line number 1 this is line number 2 this is line number 3 this is line number 4
     this is line number 1 this is line number 2 this is line number 3 this is line number 4
-    
 
 # 자료형(Data Type)
 
 ## 자료형 분류
+
 - **불린형**(Boolean Type)
 - **수치형**(Numeric Type)
-    - int (정수, integer)
-    - float (부동소수점, 실수, floating point number)
+  - int (정수, integer)
+  - float (부동소수점, 실수, floating point number)
 - **문자열**(String Type)
 - **None**
-    - 값이 없음을 표현하기 위한 타입
-
+  - 값이 없음을 표현하기 위한 타입
 
 <img width="634" alt="자료형" src="https://user-images.githubusercontent.com/45934087/148158891-fe28256b-1df4-4b83-ab51-54d06c107d20.png">
-
 
 ## 불린형 (Boolean Type)
 
@@ -646,15 +519,14 @@ print(multi_line_string3)
 비교/논리 연산을 수행 등에서 활용됩니다.
 
 다음은 `False`로 변환됩니다.
+
 ```
 0, 0.0, (), [], {}, '', None
 ```
 
-
 ```python
 # print와 type을 이용하여 True와 False의 타입을 출력해 봅시다.
 ```
-
 
 ```python
 print(type(True))
@@ -663,104 +535,61 @@ print(type(False))
 
     <class 'bool'>
     <class 'bool'>
-    
 
 - bool() 함수
-    - 특정 데이터가 True인지 False인지 검증합니다.
-
+  - 특정 데이터가 True인지 False인지 검증합니다.
 
 ```python
 # 0, '', 1, [], -1, [1, 2, 3] 을 bool 함수를 이용하여 타입을 확인해 봅시다.
 ```
 
-
 ```python
 bool(0)
 ```
 
-
-
-
     False
-
-
-
 
 ```python
 bool('')
 ```
 
-
-
-
     False
-
-
-
 
 ```python
 bool([])
 ```
 
-
-
-
     False
-
-
-
 
 ```python
 bool(-1)
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 bool([1, 2, 3])
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 bool(None)
 ```
 
-
-
-
     False
-
-
-
 
 ```python
 bool({})
 ```
 
-
-
-
     False
 
-
-
 ## 수치형(Numeric Type)
+
 [파이썬 문서](https://docs.python.org/ko/3/library/stdtypes.html#numeric-types-int-float-complex)
 
-###  `int` (정수, ingteger)
+### `int` (정수, ingteger)
 
 모든 정수는 `int`로 표현됩니다.
 
@@ -771,30 +600,21 @@ Python3에서는 `long` 타입은 없고 모두 `int` 타입으로 표기 됩니
 
 8진수 : `0o` / 2진수 : `0b` / 16진수: `0x` 로도 표현 가능합니다. 
 
-
 ```python
 # 변수 a에 정수 3을 할당하고 해당 변수의 type을 알아봅시다.
 ```
-
 
 ```python
 a = 3
 type(a)
 ```
 
-
-
-
     int
-
-
-
 
 ```python
 # 변수 a에 2의 64제곱을 할당합니다.
 # print와 type을 이용하여 a의 값과 타입을 확인해봅시다.
 ```
-
 
 ```python
 a = 2**64
@@ -802,27 +622,26 @@ print(type(a))
 ```
 
     <class 'int'>
-    
 
 **파이썬에서 표현할 수 있는 가장 큰 수**
+
 * 파이썬에서 가장 큰 숫자를 활용하기 위해 sys 모듈을 불러옵니다.
 * 파이썬은 기존 C 계열 프로그래밍 언어와 다르게 정수 자료형(integer)에서 오버플로우가 없습니다.
 * 임의 정밀도 산술(arbitrary-precision arithmetic)을 사용하기 때문입니다. 
 
 > **오버플로우(overflow)**
+
 - 데이터 타입 별로 사용할 수 있는 메모리의 크기가 제한되어 있습니다.
 - 표현할 수 있는 수의 범위를 넘어가는 연산을 하게 되면, 기대했던 값이 출력되지 않는 현상, 즉 메모리를 넘어선 상황을 의미합니다.
 
 > **임의 정밀도 산술(arbitrary-precision arithmetic)**
+
 - 사용할 수 있는 메모리양이 정해져 있는 기존의 방식과 달리, 현재 남아있는 만큼의 가용 메모리를 모두 수 표현에 끌어다 쓸 수 있는 형태를 의미합니다.
 - 특정 값을 나타내는데 4바이트가 부족하다면 5바이트, 더 부족하면 6바이트까지 사용할 수 있게 유동적으로 운용합니다.
-
-
 
 ```python
 # 파이썬이 얼만큼 큰 숫자까지 저장할 수 있는지 확인해봅시다.
 ```
-
 
 ```python
 import sys
@@ -835,8 +654,6 @@ print(super_max)
 
     9223372036854775807
     85070591730234615847396907784232501249
-    
-
 
 ```python
 # n진수를 만들어봅시다.
@@ -859,8 +676,6 @@ print(hexadecimal_number)
     8
     10
     16
-    
-
 
 ```python
 binary_number = 0b10
@@ -878,8 +693,6 @@ print(f"""2진수 : {binary_number}
     8진수 : 8
     10진수 : 10
     16진수 : 16
-    
-    
 
 ### `float` (부동소수점, 실수, floating point number)
 
@@ -889,34 +702,26 @@ print(f"""2진수 : {binary_number}
 
 이는 컴퓨터가 2진수(비트)를 통해 숫자를 표현하는 과정에서 생기는 오류이며, 대부분의 경우는 중요하지 않으나 값이 같은지 비교하는 과정에서 문제가 발생할 수 있습니다.
 
-
 ```python
 # 변수 a에 실수 3.5를 할당하고 해당 변수의 type을 알아봅시다.
 ```
-
 
 ```python
 a= 3.5
 type(a)
 ```
 
-
-
-
     float
 
-
-
 #### 컴퓨터식 지수 표현 방식
-* e를 사용할 수도 있습니다. (e와 E 모두 사용 가능)
 
+* e를 사용할 수도 있습니다. (e와 E 모두 사용 가능)
 
 ```python
 # 컴퓨터식 지수 표현 방식을 사용해봅시다.
 # 변수 b에 지수 314e-2를 할당하고 해당 변수의 type을 알아봅시다.
 # print를 이용해 변수 b의 값도 알아봅시다.
 ```
-
 
 ```python
 b = 314e-2
@@ -925,46 +730,31 @@ print(b)
 ```
 
     3.14
-    
 
 #### 실수의 연산
-* 실수의 경우 실제로 값을 처리하기 위해서는 조심할 필요가 있습니다.
 
+* 실수의 경우 실제로 값을 처리하기 위해서는 조심할 필요가 있습니다.
 
 ```python
 # 실수의 덧셈을 해봅시다.
 # 실수 두 개를 더해봅시다. (3.5 + 3.2)
 ```
 
-
 ```python
 3.5 + 3.2
 ```
 
-
-
-
     6.7
-
-
-
 
 ```python
 # 실수의 뺄셈을 해봅시다. (3.5 - 3.12)
 ```
 
-
 ```python
 3.5 - 3.12
 ```
 
-
-
-
     0.3799999999999999
-
-
-
 
 ```python
 # 우리가 원하는대로 반올림을 해봅시다.
@@ -974,50 +764,33 @@ print(b)
 # 3.5 - 3.12 의 값을 반올림하는데 소수점 2자리까지 나타나게 해봅시다.
 ```
 
-
 ```python
 round((3.5 - 3.12), 2)
 ```
 
-
-
-
     0.38
-
-
-
 
 ```python
 # 3.5 - 3.12의 결과와 0.38의 값이 같은지 == 을 사용해서 확인해봅시다.
 ```
 
-
 ```python
 3.5 - 3.12 == 0.38
 ```
 
-
-
-
     False
-
-
-
 
 ```python
 # print를 이용해서 3.5 - 3.12의 값을 확인해 봅시다.
 ```
-
 
 ```python
 print(3.5 - 3.12)
 ```
 
     0.3799999999999999
-    
 
 * 따라서 다음과 같은 방법으로 처리 할 수 있습니다. (이외에 다양한 방법이 있음)
-
 
 ```python
 # 1. 기본적인 처리방법을 알아봅시다.
@@ -1026,7 +799,6 @@ print(3.5 - 3.12)
 # a와 b의 차이가 1e-10 값 이하이면 a 와 b 는 같다고 볼 수 있습니다.
 ```
 
-
 ```python
 a = 3.5 - 3.12
 b = 0.38
@@ -1034,13 +806,7 @@ b = 0.38
 abs(a - b) <= 1e-10
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 # 2. sys 모듈을 통해 처리하는 방법을 알아봅시다.
@@ -1049,24 +815,16 @@ abs(a - b) <= 1e-10
 # a와 b의 차이가 sys.float_info.epsilon의 값 이하이면 a, b 는 같다고 볼 수 있습니다.
 ```
 
-
 ```python
 import sys
 abs(a - b) <= sys.float_info.epsilon
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 # 3. python 3.5부터 활용 가능한 math 모듈을 통해 처리하는 법을 알아봅시다.
 ```
-
 
 ```python
 # math.isclose() 를 이용해서 a와 b의 값이 같은지 확인할수 있습니다.
@@ -1074,16 +832,12 @@ import math
 math.isclose(a, b)
 ```
 
-
-
-
     True
-
-
 
 ## 문자열 (String Type)
 
 ### 문자열
+
 - 모든 문자는 `str` 로 표현됩니다.
 
 ### 기본 활용법
@@ -1091,14 +845,12 @@ math.isclose(a, b)
 * 문자열은 Single quotes(`'`)나 Double quotes(`"`)을 활용하여 표현 가능합니다.
 
 * 단, 문자열을 묶을 때 동일한 문장부호를 활용해야하며, `PEP-8`에서는 **하나의 문장부호를 선택**하여 유지하도록 하고 있습니다. 
-(Pick a rule and Stick to it)
-
+  (Pick a rule and Stick to it)
 
 ```python
 # 문자열 hello 를 출력해 봅시다.
 # 문자열 hello의 타입을 출력해 봅시다.
 ```
-
 
 ```python
 print('hello')
@@ -1107,20 +859,16 @@ type('hello')
 
     hello
     
-
-
-
-
+    
+    
+    
+    
     str
-
-
-
 
 ```python
 # 문자열 철수 '안녕' 을 출력해 봅시다.
 # 문자열 철수 "안녕" 을 출력해 봅시다.
 ```
-
 
 ```python
 print("철수 '안녕'")
@@ -1129,15 +877,12 @@ print('철수 "안녕 "')
 
     철수 '안녕'
     철수 "안녕 "
-    
-
 
 ```python
 # 변수에 문자열을 할당하고 출력해봅시다.
 # 변수 greeting 에 hi를 name 에 'ssafy'를 할당합시다. 
 # 그리고 각각의 변수를 print로 찍어보고 type도 확인해봅시다.
 ```
-
 
 ```python
 # greeting = hi
@@ -1151,21 +896,17 @@ type(name)
 
     ssafy
     
-
-
-
-
+    
+    
+    
+    
     str
-
-
-
 
 ```python
 # 변수 age 에 사용자로 부터 입력을 받을 수 있는 input()의 결과를 저장합시다.
 # age 에 입력받은 값이 저장되었는지 그리고 그 type이 무엇인지 확인해봅시다.
 # 숫자를 할당했을때와 문자를 할당했을때의 type이 같은지 다른지도 확인해봅시다.
 ```
-
 
 ```python
 age = input()
@@ -1174,41 +915,35 @@ type(age)
 
     45
     
-
-
-
-
+    
+    
+    
+    
     str
-
-
 
 - Immutable
 
 문자열을 변경할 수 없음
-
 
 ```python
 a = 'my string?'
 a[-1] = '!'
 ```
 
-
     ---------------------------------------------------------------------------
-
+    
     TypeError                                 Traceback (most recent call last)
-
+    
     Input In [101], in <cell line: 2>()
           1 a = 'my string?'
     ----> 2 a[-1] = '!'
     
-
+    
     TypeError: 'str' object does not support item assignment
-
 
 - Iterable
 
 문자열을 순회 가능함
-
 
 ```python
 a = '123'
@@ -1219,40 +954,35 @@ for char in a:
     1
     2
     3
-    
 
 ### 중첩 따옴표 (Nested Quotes)
+
 따옴표 안에 따옴표를 표현할 경우 아래와 같이 사용할 수 있습니다.
 
 - 작은따옴표: `'"큰" 따옴표를 담을 수 있습니다'`
-
 
 ```python
 print('문자열 안에 "작은 따옴표"를 사용하려면 큰 따옴표로 묶는다.')
 ```
 
     문자열 안에 "작은 따옴표"를 사용하려면 큰 따옴표로 묶는다.
-    
 
 - 큰따옴표: `"'작은' 따옴표를 담을 수 있습니다"`
-
 
 ```python
 print("문자열 안에 '작은 따옴표'를 사용하려면 큰 따옴표로 묶는다.")
 ```
 
     문자열 안에 '작은 따옴표'를 사용하려면 큰 따옴표로 묶는다.
-    
 
 ### 삼중 따옴표 (Triple Quotes)
+
 작은 따옴표나 큰 따옴표를 삼중으로 사용합니다.
 
 - 문자열 안에 따옴표를 넣을 때 사용합니다.
 
 - 여러줄에 걸쳐있는 문장은 다음과 같이 표현 가능합니다.
-
 * `PEP-8`에 따르면 이 경우에는 반드시 `"""`를 사용하도록 규정합니다.
-
 
 ```python
 # 아래 작성된 내용을 삼중 따옴표와 하나의 print 문을 사용하여 출력해 봅시다.
@@ -1264,14 +994,12 @@ print("""문자열 안에 '작은 따옴표'나
     문자열 안에 '작은 따옴표'나
     "큰 따옴표"를 사용할 수 있고
     여러 줄을 사용할 때도 편리하다.
-    
 
 문자열 안에 '작은 따옴표'나
 
 "큰 따옴표"를 사용할 수 있고
 
 여러 줄을 사용할 때도 편리하다.
-
 
 ```python
 print("""
@@ -1280,40 +1008,33 @@ print("""
 """)
 ```
 
-    
     개행문자 없이
     여러 줄을 그대로 출력 가능합니다.
-    
-    
 
 ### 이스케이프 시퀀스 (Escape sequence)
 
 문자열을 활용하는 경우 특수문자 혹은 조작을 하기 위하여 사용되는 것으로 역슬래시 `\`를 활용하여 이를 구분합니다. 
 
-|<center>예약문자</center>|내용(의미)|
-|:--------:|:--------:|
-|\n|줄 바꿈|
-|\t|탭|
-|\r|캐리지리턴|
-|\0|널(Null)|
-|\\\\ |`\`|
-|\\'|단일인용부호(`'`)|
-|\\"|이중인용부호(`"`)|
-
+| <center>예약문자</center> | 내용(의미)      |
+|:---------------------:|:-----------:|
+| \n                    | 줄 바꿈        |
+| \t                    | 탭           |
+| \r                    | 캐리지리턴       |
+| \0                    | 널(Null)     |
+| \\\\                  | `\`         |
+| \\'                   | 단일인용부호(`'`) |
+| \\"                   | 이중인용부호(`"`) |
 
 ```python
 # 다음 문자열을 작은 따옴표와 escape sequence만을 사용하여 출력해 봅시다.
 # 철수야 '안녕'
 ```
 
-
 ```python
 print('철수야 \'안녕\'')
 ```
 
     철수야 '안녕'
-    
-
 
 ```python
 # 다음 문자열을 하나의 print 함수에서 출력해 봅시다.
@@ -1322,45 +1043,39 @@ print('이 다음은 엔터. 그리고 탭 탭')
 ```
 
     이 다음은 엔터. 그리고 탭 탭
-    
 
 이 다음은 엔터.
 그리고 탭    탭
-
 
 ```python
 print('이 다음은 엔터. \n그리고 탭\t탭')
 ```
 
     이 다음은 엔터. 
-    그리고 탭	탭
-    
+    그리고 탭    탭
 
-### String interpolation 
+### String interpolation
 
 * `%-formatting` 
-
-    * `%d` : 정수
-    
-    * `%f` : 실수
-    
-    * `%s` : 문자열
+  
+  * `%d` : 정수
+  
+  * `%f` : 실수
+  
+  * `%s` : 문자열
 
 * [`str.format()` ](https://pyformat.info/)
 
 * [`f-strings`](https://www.python.org/dev/peps/pep-0498/) : 파이썬 3.6 이후 버전에서 지원
 
-
 ```python
 # name 변수에 이름, score 변수에 학점을 할당해봅시다.
 ```
-
 
 ```python
 name = '모란'
 score = 83
 ```
-
 
 ```python
 # %-formatting을 활용해봅시다.
@@ -1368,7 +1083,6 @@ score = 83
 # print를 이용하여 score를 정수 형태로 출력해봅시다.
 # print를 이용하여 score를 실수 형태로 출력해봅시다.
 ```
-
 
 ```python
 print('이름은 %s 입니다' % (name))
@@ -1379,14 +1093,11 @@ print('%d' % score)
     이름은 모란 입니다
     83.000000
     83
-    
-
 
 ```python
 # str.format()을 활용해봅시다.
 # name 을 출력해봅시다.
 ```
-
 
 ```python
 str.format(name)
@@ -1398,28 +1109,22 @@ print('안녕하세요. {1}이라고 합니다. 학점은 {0}입니다'.format(n
     안녕하세요. 모란이라고 합니다. 학점은 83입니다
     안녕하세요. 모란이라고 합니다. 학점은 83입니다
     안녕하세요. 83이라고 합니다. 학점은 모란입니다
-    
-
 
 ```python
 # f-string을 활용해봅시다.
 # name 을 출력해봅시다.
 ```
 
-
 ```python
 print(f'{name}입니다.안녕하세요. 학점은 {score} 입니다')
 ```
 
     모란입니다.안녕하세요. 학점은 83 입니다
-    
-
 
 ```python
 # 여러줄 문자열에서도 사용 가능합니다.
 # f-string을 이용하여 name을 여러줄 문자열로 출력해봅시다.
 ```
-
 
 ```python
 print(f"""
@@ -1428,21 +1133,16 @@ Hello,
 """)
 ```
 
-    
     Hello,
     모란
-    
-    
 
 * f-strings에서는 형식을 지정할 수 있습니다.
-
 
 ```python
 # 다양한 형식을 활용하기 위해 datetime 모듈로 오늘을 표현해봅시다.
 # today 에 현재 시간 날짜를 할당해봅시다.
 # print를 이용하여 today를 출력해봅시다.
 ```
-
 
 ```python
 import datetime
@@ -1451,8 +1151,6 @@ print(today)
 ```
 
     2022-07-19 11:23:29.208625
-    
-
 
 ```python
 # interpolation에서 출력형식을 지정할 수 있습니다.
@@ -1460,16 +1158,13 @@ print(today)
 # 각각 %y, %m, %A를 사용합니다.
 ```
 
-
 ```python
 print(f'오늘은 {today:%y}년 {today:%m}월 {today:%d}일 {today:%A}')
 ```
 
     오늘은 22년 07월 19일 Tuesday
-    
 
 * f-strings에서는 연산과 출력형식 지정도 가능합니다.
-
 
 ```python
 # string interpolation을 통해 출력형식 지정 뿐만 아니라, 연산도 가능합니다.
@@ -1477,42 +1172,31 @@ print(f'오늘은 {today:%y}년 {today:%m}월 {today:%d}일 {today:%A}')
 # 원주율은 3.14. 반지를이 2일 때 원의 넓이는 12.566368이라고 출력해봅시다.
 ```
 
-
 ```python
 pi = 3.141592
 print(f'원주율은 {pi:.3}. 반지름이 2일 때 원의 넓이는 {pi*2*2}')
 ```
 
     원주율은 3.14. 반지름이 2일 때 원의 넓이는 12.566368
-    
 
 ## None Type
 
 파이썬에서는 값이 없음을 표현하기 위해 `None` 타입이 존재합니다.
 
-
 ```python
 # None의 타입을 알아봅시다.
 ```
-
 
 ```python
 type(None)
 ```
 
-
-
-
     NoneType
-
-
-
 
 ```python
 # 변수에 저장해서 확인해봅시다.
 # 변수 a에 None을 할당하고 출력해봅시다.
 ```
-
 
 ```python
 a = None
@@ -1522,19 +1206,18 @@ type(a)
 
     None
     
-
-
-
-
+    
+    
+    
+    
     NoneType
-
-
 
 # 컨테이너(Container)
 
 여러 개의 값을 저장할 수 있는 것(객체)을 의미하며, `서로 다른 자료형`을 저장 할 수 있습니다.
 
 ### 컨테이너 분류
+
 - 시퀀스(Sequence)형 : 순서가 있는(ordered) 데이터
 - 비 시퀀스(Non-sequence)형 : 순서가 없는(unordered) 데이터
 
@@ -1547,11 +1230,13 @@ type(a)
 * **주의! 순서대로 나열된 것이 `정렬되었다(sorted)`라는 뜻은 아닙니다.**
 
 ### 특징
+
 1. 순서가 있습니다.
 
 2. **특정 위치의 데이터를 가리킬 수 있습니다.**
 
 ### 종류
+
 파이썬에서 기본적인 시퀀스 타입은 다음과 같습니다.
 
 * 리스트(list)
@@ -1564,19 +1249,17 @@ type(a)
 
 * *바이너리(binary)* : 다루지 않습니다.
 
-
-
 ### 리스트 (List)
 
 <center><img src="https://user-images.githubusercontent.com/18046097/61180421-fe90ae80-a650-11e9-8211-d06f87756d05.png", alt="list figure"/></center>
 
 **생성과 접근**
+
 ```python
 [value1, value2, value3]
 ```
 
 리스트는 대괄호`[]` 및 `list()` 를 통해 만들 수 있습니다.
-
 
 ```python
 # 빈 list를 만들어봅시다.
@@ -1584,7 +1267,6 @@ type(a)
 # 변수명 another_list인 list를 list()로 만들어 봅시다.
 # 두 변수의 타입을 출력해 봅시다.
 ```
-
 
 ```python
 fir_list = list()
@@ -1594,13 +1276,7 @@ type(my_list)
 # type(another_list)
 ```
 
-
-
-
     list
-
-
-
 
 ```python
 # 원소를 포함한 list를 만들어 봅시다.
@@ -1608,7 +1284,6 @@ type(my_list)
 # 변수 location을 출력해 봅시다.
 # location의 타입을 출력해 봅시다.
 ```
-
 
 ```python
 location = ['서울','부산','대구','고양','청주']
@@ -1618,121 +1293,79 @@ type(location)
 
     ['서울', '부산', '대구', '고양', '청주']
     
-
-
-
-
+    
+    
+    
+    
     list
-
-
-
 
 ```python
 # location의 첫번째 값을 인덱스로 접근해 봅시다.
 ```
 
-
 ```python
 location[0]
 ```
 
-
-
-
     '서울'
 
-
-
-
 순서가 있는 시퀀스로 인덱스를 통해 접근 가능합니다.
+
 - 값에 대한 접근은 `list[i]` 방식으로 접근합니다.
 
 ![image](https://user-images.githubusercontent.com/45934087/148164331-f0ff4193-6b05-4d99-bbde-dd1eef13b0b1.png)
-
-
 
 ```python
 # 변수 boxes에 문자열 'A', 'B', 리스트 ['apple', 'banana', 'cherry']를 할당합니다.
 ```
 
-
 ```python
 boxes = ['A', 'B', ['apple', 'banana', 'cherry']]
 ```
-
 
 ```python
 # boxes의 길이를 len 함수를 이용하여 출력해 봅시다.
 ```
 
-
 ```python
 len(boxes)
 ```
 
-
-
-
     3
-
-
-
 
 ```python
 # boxes의 3번째 요소를 인덱스로 접근하여 출력해 봅시다.
 ```
 
-
 ```python
 boxes[2]
 ```
 
-
-
-
     ['apple', 'banana', 'cherry']
-
-
-
 
 ```python
 # boxes의 3번째 요소들 중, 마지막 요소를 negative index로 접근하여 출력해 봅시다.
 ```
 
-
 ```python
 boxes[2][-1]
 ```
 
-
-
-
     'cherry'
-
-
-
 
 ```python
 
 ```
-
 
 ```python
 # boxes의 마지막 요소들 중, 두번째 요소의 첫번째 문자열을 출력해 봅시다.
 ```
 
-
 ```python
 boxes[2][1][0]
 ```
 
-
-
-
     'b'
-
-
-
 
 ```python
 
@@ -1741,6 +1374,7 @@ boxes[2][1][0]
 ### 튜플 (Tuple)
 
 **생성과 접근**
+
 ```python
 (value1, value2)
 ```
@@ -1751,13 +1385,11 @@ boxes[2][1][0]
 
 - 직접 사용하기 보다는 파이썬 내부에서 다양한 용도로 활용되고 있습니다.
 
-
 ```python
 # tuple을 만들어봅시다.
 # 변수명이 my_tuple인 tuple을 만들어 봅시다. 단, 무작위 정수 2개를 포함하여 만듭니다.
 # my_tuple의 타입을 출력해 봅시다.
 ```
-
 
 ```python
 my_tuple = (1, 2)
@@ -1765,13 +1397,10 @@ print(type(my_tuple))
 ```
 
     <class 'tuple'>
-    
-
 
 ```python
 # 아래와 같은 방식으로도 만들 수 있습니다.
 ```
-
 
 ```python
 another_tuple = 1, 2
@@ -1781,11 +1410,10 @@ print(type(another_tuple))
 
     (1, 2)
     <class 'tuple'>
-    
 
 **튜플 생성 주의 사항**
-- 단일 항목의 경우
 
+- 단일 항목의 경우
 
 ```python
 # 하나의 항목으로 구성된 튜플은 생성 시 값 뒤에 쉼표를 붙여야 합니다.
@@ -1797,8 +1425,6 @@ print(type(a))
 
     (1,)
     <class 'tuple'>
-    
-
 
 ```python
 # 변수명이 single_tuple인 하나의 요소(값)로 구성된 tuple을 만들어 봅시다. (길이가 1)
@@ -1806,7 +1432,6 @@ print(type(a))
 # single_tuple의 타입을 출력해 봅시다.
 # single_tuple의 길이를 출력해 봅시다.
 ```
-
 
 ```python
 single_tuple = ('hello',)
@@ -1816,13 +1441,10 @@ print(len(single_tuple))
 
     <class 'tuple'>
     1
-    
-
 
 ```python
 # 길이가 1인 tuple을 만들 때 쉼표가 없는 경우 어떻게 되는지 확인 해봅시다.
 ```
-
 
 ```python
 tuple_or_not = ('hello')
@@ -1830,16 +1452,13 @@ print(type(tuple_or_not))
 ```
 
     <class 'str'>
-    
 
 - 복수 항목의 경우
-
 
 ```python
 # 마지막 항목에 붙은 쉼표는 생략 할 수 있습니다.
 # 아래 코드를 실행하여 변수 b와 c의 타입을 확인해 봅시다.
 ```
-
 
 ```python
 b = 1, 2, 3
@@ -1849,8 +1468,6 @@ print(type(b))
 
     (1, 2, 3)
     <class 'tuple'>
-    
-
 
 ```python
 c = 4, 5, 6,
@@ -1860,18 +1477,16 @@ print(type(c))
 
     (4, 5, 6)
     <class 'tuple'>
-    
 
 **튜플 대입**
+
 - 우변의 값을 좌변의 변수에 한번에 할당하는 과정을 의미합니다.
 - 튜플은 일반적으로 파이썬 내부에서 활용됩니다.
-    - 추후 함수 파트에서 복수의 값을 반환하는 경우에도 확인할 수 있습니다.
-
+  - 추후 함수 파트에서 복수의 값을 반환하는 경우에도 확인할 수 있습니다.
 
 ```python
 # 파이썬 내부에서는 다음과 같이 활용됩니다. (변수 및 자료형 예제에서 사용된 코드입니다.)
 ```
-
 
 ```python
 x, y = 1, 2
@@ -1881,13 +1496,10 @@ print(y)
 
     1
     2
-    
-
 
 ```python
 # 실제로는 tuple로 처리됩니다.
 ```
-
 
 ```python
 x, y = (1, 2)
@@ -1897,13 +1509,10 @@ print(y)
 
     1
     2
-    
-
 
 ```python
 # 변수의 값을 swap하는 코드 역시 tuple을 활용하고 있습니다. 
 ```
-
 
 ```python
 x, y = y, x
@@ -1913,8 +1522,6 @@ print(y)
 
     2
     1
-    
-
 
 ```python
 # 변수명이 empty인 빈 tuple을 만들어 봅시다.
@@ -1922,7 +1529,6 @@ print(y)
 # empty의 타입을 출력해 봅시다.
 # empty의 길이를 출력해 봅시다.
 ```
-
 
 ```python
 empty = ()
@@ -1932,7 +1538,6 @@ print(len(empty))
 
     <class 'tuple'>
     0
-    
 
 ### 레인지 (range())
 
@@ -1940,9 +1545,7 @@ print(len(empty))
 
 기본형 : `range(n)` 
 
-
 > 0부터 n-1까지 값을 가짐
-
 
 범위 지정 : `range(n, m)` 
 
@@ -1952,12 +1555,10 @@ print(len(empty))
 
 > n부터 m-1까지 +s만큼 증가한다
 
-
 ```python
 # range를 만들어봅시다.
 # 0부터 2까지 값을 가지는 range를 만들고 타입을 출력해 봅시다.
 ```
-
 
 ```python
 range(2)
@@ -1965,43 +1566,27 @@ print(range(2))
 ```
 
     range(0, 2)
-    
-
 
 ```python
 # 0부터 9까지 값을 가지는 range를 만들고 list로 형 변환을 해 봅시다.
 # 작성한 range를 list()로 감싸 형 변환 할 수 있습니다.
 ```
 
-
 ```python
 list(range(10))
 ```
 
-
-
-
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-
-
 
 ```python
 # 4부터 8까지의 숫자를 담은 range를 만들고 list로 형 변환을 해 봅시다.
 ```
 
-
 ```python
 list(range(4, 9))
 ```
 
-
-
-
     [4, 5, 6, 7, 8]
-
-
-
 
 ```python
 # range(start, end, [step, ])을 활용합니다.
@@ -2009,7 +1594,6 @@ list(range(4, 9))
 # 출력 결과는 다음과 같습니다.
 # [0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
 ```
-
 
 ```python
 range(0,-10,-1)
@@ -2022,14 +1606,12 @@ print(list(range(-10, 0, 1)))
 
     [0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
     [-10, -9, -8, -7, -6, -5, -4, -3, -2, -1]
-    
 
 ### 딕셔너리 (dictionary)
 
 `dictionary`는 `key`와 `value`가 쌍으로 이뤄져있습니다.
 
-
-<center><img src="https://user-images.githubusercontent.com/18046097/61180427-1405d880-a651-11e9-94e1-1cc5c2a2ff34.png"></center> 
+<center><img src="https://user-images.githubusercontent.com/18046097/61180427-1405d880-a651-11e9-94e1-1cc5c2a2ff34.png"></center>
 
 **생성과 접근**
 
@@ -2042,13 +1624,11 @@ print(list(range(-10, 0, 1)))
 * `key`는 **변경 불가능(immutable)한 데이터**만 가능합니다. (immutable : string, integer, float, boolean, tuple, range)
 * `value`는 `list`, `dictionary`를 포함한 모든 것이 가능합니다.
 
-
 ```python
 # 비어있는 dictionary를 두가지 방법으로 만들어봅시다.
 # {}와 dict()로 만들 수 있습니다.
 # 두 변수의 타입을 출력해 봅시다.
 ```
-
 
 ```python
 dict_a = {}
@@ -2057,18 +1637,11 @@ type(dict_a)
 type(dict_b)
 ```
 
-
-
-
     dict
-
-
-
 
 ```python
 # dictionary에 중복된 key는 존재할 수 없습니다.
 ```
-
 
 ```python
 dict_a = {1: 1, 2: 2, 3: 3, 1: 4}
@@ -2076,8 +1649,6 @@ print(dict_a)
 ```
 
     {1: 4, 2: 2, 3: 3}
-    
-
 
 ```python
 # 지역번호가 담긴 전화번호부를 만들어봅시다.
@@ -2085,54 +1656,43 @@ print(dict_a)
 # 예) 서울 - 02
 ```
 
-
 ```python
 phone_book = {'서울' : '02', '경기도' : '031', \
               '경상북도' : '054', '제주도':'064', '광주':'062', '인천': '032' }
 ```
-
 
 ```python
 # 위에서 작성한 phone_book이 가지고 있는 key 목록을 확인 해 봅시다.
 # dictionary의 .keys() 메소드를 활용하여 key를 확인 해볼 수 있습니다.
 ```
 
-
 ```python
 print(phone_book.keys())
 ```
 
     dict_keys(['서울', '경기도', '경상북도', '제주도', '광주', '인천'])
-    
-
 
 ```python
 # 위에서 작성한 phone_book이 가지고 있는 value 목록을 확인 해 봅시다.
 # 딕셔너리의 .values() 메소드를 활용하여 value를 확인 해볼 수 있습니다.
 ```
 
-
 ```python
 print(phone_book.values())
 ```
 
     dict_values(['02', '031', '054', '064', '062', '032'])
-    
-
 
 ```python
 # 위에서 작성한 phone_book이 가지고 있는 key와 value 목록을 확인 해 봅시다.
 # 딕셔너리의 .items() 메소드를 활용하여 key, value를 확인 해볼 수 있습니다.
 ```
 
-
 ```python
 print(phone_book.items())
 ```
 
     dict_items([('서울', '02'), ('경기도', '031'), ('경상북도', '054'), ('제주도', '064'), ('광주', '062'), ('인천', '032')])
-    
-
 
 ```python
 
