@@ -122,12 +122,12 @@
 #                 lonely_number.append(i)
 #                 n += 1
 #     return lonely_number
-def lonely(lonely_lst):
-    lonely_number = [lonely_lst[0]]
-    for i in range(1 , len(lonely_lst)):
-        if lonely_number[-1] != lonely_lst[i]:
-            lonely_number.append(lonely_lst[i])
+# def lonely(lonely_lst):
+#     lonely_number = [lonely_lst[0]]
+#     for i in range(1 , len(lonely_lst)):
+#         if lonely_number[-1] != lonely_lst[i]:
+#             lonely_number.append(lonely_lst[i])
     
-    for num in lonely_lst[1:]:
-        if lonely_number[-1] != num:
-            lonely_number.append(num)
+#     for num in lonely_lst[1:]:
+#         if lonely_number[-1] != num:
+#             lonely_number.append(num)
