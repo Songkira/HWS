@@ -16,12 +16,10 @@
     <img src="https://user-images.githubusercontent.com/18046097/61180553-25e87b00-a653-11e9-9895-7976d7204734.png", alt='if flowchart'/>
 </center>
 
-
 ```python
 # 위의 Flow Chart를 조건문으로 작성해봅시다.
 # if 문을 활용해봅시다.
 ```
-
 
 ```python
 #
@@ -35,12 +33,10 @@ print(a)
 
     5 이하
     5
-    
 
 # 조건문(Conditional Statement)
 
 `if` 문은 반드시 **참/거짓을 판단할 수 있는 조건**과 함께 사용합니다.
-
 
 ## `if` 조건문의 구성
 
@@ -63,6 +59,7 @@ if a > 0:
 else:
     print('음수입니다.')
 ```
+
 * `expression`에는 일반적으로 참/거짓에 대한 조건식이 들어갑니다.
 
 * **조건**이 **참**인 경우 `:` 이후의 문장을 수행합니다.
@@ -72,10 +69,10 @@ else:
 * 여러 개의 `elif` 부가 있을 수 있고(없거나), `else`는 선택적으로 사용합니다.
 
 ### 주의사항
-* 이때 반드시 **들여쓰기**를 유의해야합니다. 
-    - 파이썬에서는 코드 블록을 자바나 C언어의 `{}`와 달리 **들여쓰기**로 판단하기 때문입니다.
-* 앞으로 우리는 [PEP 8](https://www.python.org/dev/peps/pep-0008/#indentation)에서 권장하는 **4spaces**를 사용합니다.
 
+* 이때 반드시 **들여쓰기**를 유의해야합니다. 
+  - 파이썬에서는 코드 블록을 자바나 C언어의 `{}`와 달리 **들여쓰기**로 판단하기 때문입니다.
+* 앞으로 우리는 [PEP 8](https://www.python.org/dev/peps/pep-0008/#indentation)에서 권장하는 **4spaces**를 사용합니다.
 
 <center>
     <img src="https://user-images.githubusercontent.com/18046097/61180564-3a2c7800-a653-11e9-9fba-d60d2688ed3a.png", alt="if style"/>
@@ -85,15 +82,12 @@ else:
 
 <center>
     <img src="https://user-images.githubusercontent.com/18046097/61180566-3ac50e80-a653-11e9-81a6-2f195eeb0a65.png", alt="[space vs tab]"/>
-</center>    
-
-
-
+</center>
 
 [출처 : 400,000 GitHub repositories, 1 billion files, 14 terabytes of code: Spaces or Tabs?](https://medium.com/@hoffa/400-000-github-repositories-1-billion-files-14-terabytes-of-code-spaces-or-tabs-7cfe0b5dd7fd)
 
-
 ### [연습] 크리스마스 판독기
+
 > 조건문을 통해 사용자가 입력한 날짜가 크리스마스인지 확인하세요.
 
 ---
@@ -106,14 +100,11 @@ else:
 
 크리스마스입니다.
 
-
 ```python
 is_christmas = input('날짜를 입력해주세요 ex)12/24 : ')
 ```
 
     날짜를 입력해주세요 ex)12/24 : 12/25
-    
-
 
 ```python
 # 아래에 코드를 작성하세요.
@@ -122,7 +113,6 @@ is_christmas = input('날짜를 입력해주세요 ex)12/24 : ')
 # '크리스마스입니다 :)' 를 출력하고
 # 그외의 경우에는 '크리스마스가 아닙니다 :(' 를 출력하는 코드를 작성하세요.
 ```
-
 
 ```python
 #
@@ -133,10 +123,8 @@ else:
 ```
 
     크리스마스입니다 :)
-    
 
 ### [실습] 홀/짝 판독기
-
 
 > 조건문을 통해 변수 num의 값과 홀수/짝수 여부를 출력하세요.
 
@@ -150,14 +138,11 @@ else:
 
 홀수입니다.
 
-
 ```python
 num = int(input('숫자를 입력하세요 : '))
 ```
 
     숫자를 입력하세요 : 3
-    
-
 
 ```python
 # 아래에 코드를 작성하세요.
@@ -165,7 +150,6 @@ num = int(input('숫자를 입력하세요 : '))
 # num에 할당된 값을 2로 나누었을때 나머지가 있는 경우에는 '홀수입니다.'를 출력하고
 # num에 할당된 값이 2로 나누어 떨어지는 경우에는 '짝수입니다.'를 출력하는 코드를 작성하세요.
 ```
-
 
 ```python
 #
@@ -176,11 +160,11 @@ else:
 ```
 
     홀수입니다.
-    
 
 ## `elif` 복수 조건
 
 2개 이상의 조건을 활용할 경우 `elif <조건>:`을 활용합니다.
+
 <center>
 <img src="https://user-images.githubusercontent.com/18046097/61180560-3993e180-a653-11e9-8263-79bd7bc6eed7.png", alt="elif">
 </center>
@@ -205,14 +189,11 @@ else:
 
 미세먼지 확인 완료!
 
-
 ```python
 dust = int(input('미세먼지 농도를 입력하세요 : '))
 ```
 
     미세먼지 농도를 입력하세요 : 80
-    
-
 
 ```python
 # 아래에 코드를 작성하세요.
@@ -223,7 +204,6 @@ dust = int(input('미세먼지 농도를 입력하세요 : '))
 # dust에 할당된 값이 30 이하인 경우에는 '좋음'을 출력하고,
 # 조건식 완료 이후 '미세먼지 확인 완료!'를 출력하는 코드를 작성하세요.
 ```
-
 
 ```python
 if dust > 150:
@@ -239,8 +219,6 @@ print('미세먼지 확인 완료!')
 
     보통
     미세먼지 확인 완료!
-    
-
 
 ```python
 # 조건문은 순서대로 조건식을 검증하므로 순서에 유의해야 한다.
@@ -257,7 +235,6 @@ elif dust > 80:
 ```
 
     보통
-    
 
 ## 중첩 조건문(Nested Conditional Statement)
 
@@ -268,17 +245,16 @@ elif dust > 80:
 > 아래의 코드에서 중첩조건문을 활용하여 미세먼지 농도(dust 값)이 300이 넘는 경우 ‘실외 활동을 자제하세요.’를 추가적으로 출력하고 음수인 경우 ‘값이 잘못 되었습니다.’를 출력하세요.
 
 --- 
+
 **[출력 예시]**
 
 매우 나쁨
 
 실외 활동을 자제하세요.
 
-
 ```python
 dust = 500
 ```
-
 
 ```python
 # 아래에 코드를 작성하세요.
@@ -290,7 +266,6 @@ dust = 500
 # dust에 할당된 값이 30 이하, 0 이상인 경우에는 '좋음'을 출력하고,
 # dust에 할당된 값이 0 미만인 경우에는 '값이 잘못 되었습니다.'를 출력하는 코드를 작성하세요.
 ```
-
 
 ```python
 if dust > 150:
@@ -310,7 +285,6 @@ else:
     매우 나쁨
     
     실외 활동을 자제하세요.
-    
 
 ## 조건 표현식(Conditional Expression)
 
@@ -326,7 +300,6 @@ else:
 true_value if <조건식> else false_value
 ```
 
-
 ```python
 num = int(input('숫자를 입력하세요 : '))
 
@@ -335,8 +308,6 @@ print('0 보다 큼') if num > 0 else print('0 보다 크지않음')
 
     숫자를 입력하세요 : 5
     0 보다 큼
-    
-
 
 ```python
 # 아래의 코드는 무엇을 위한 코드일까요?
@@ -347,14 +318,11 @@ print(value)
 
     숫자를 입력하세요 : 5
     5
-    
-
 
 ```python
 # 아래에 주석으로 답변을 작성하세요.
 # 절대값을 구하는 조건식
 ```
-
 
 ```python
 num = int(input('숫자를 입력하세요 : '))
@@ -368,8 +336,6 @@ print(value)
 
     숫자를 입력하세요 : 5
     5
-    
-
 
 ```python
 num = -5
@@ -378,8 +344,6 @@ print(value)
 ```
 
     0
-    
-
 
 ```python
 num = -5
@@ -392,8 +356,6 @@ print(value)
 ```
 
     0
-    
-
 
 ```python
 num = 2
@@ -405,8 +367,6 @@ print(result)
 ```
 
     짝수입니다.
-    
-
 
 ```python
 num = 2
@@ -415,7 +375,6 @@ print(result)
 ```
 
     짝수입니다.
-    
 
 ### [연습] 조건 표현식 작성하기
 
@@ -429,19 +388,19 @@ else:
     result = '짝수입니다.'
 print(result)
 ```
+
 ---
 
 **[출력 예시]**
+
 ```
 짝수입니다.
 ```
-
 
 ```python
 # 아래에 코드를 작성하세요.
 # 위의 조건문을 조건 표현식으로 바꿔보세요.
 ```
-
 
 ```python
 num = 2
@@ -450,7 +409,6 @@ print(result)
 ```
 
     짝수입니다.
-    
 
 ### [실습] 조건 표현식과 동일한 if 문 작성하기
 
@@ -461,17 +419,17 @@ num = -5
 value = num if num >= 0 else 0
 print(value)
 ```
+
 ---
+
 **[출력 예시]**
 
 0
-
 
 ```python
 # 아래에 코드를 작성하세요.
 # 위의 조건 표현식을 if 문으로 바꿔보세요.
 ```
-
 
 ```python
 num = -5
@@ -484,7 +442,6 @@ print(value)
 ```
 
     0
-    
 
 ---
 
@@ -497,8 +454,8 @@ print(value)
 
 `while` 문은 조건식이 참(`True`)인 경우 반복적으로 코드를 실행합니다.
 
-
 ### 활용법
+
 - **문법**
 
 ```python
@@ -515,9 +472,9 @@ while True:
 ```
 
 ### 주의사항
+
 * `while` 문 역시 조건식 뒤에 콜론(`:`)이 반드시 필요하며, 이후 실행될 코드 블럭은 **4spaces**로 **들여쓰기**를 합니다.
 * **반드시 종료조건을 설정해야 합니다.**
-
 
 <br>
 <center>
@@ -529,13 +486,11 @@ while True:
     <img src="https://user-images.githubusercontent.com/18046097/61180568-3ac50e80-a653-11e9-9960-ba15137290a6.png", alt="while"/>
 </center>
 
-
 ```python
 # 위의 flow chart를 조건문을 통해 만들어봅시다.
 # 아래에 코드를 작성하세요.
 # while 문을 활용해봅시다.
 ```
-
 
 ```python
 a = 0
@@ -551,11 +506,10 @@ print("끝")
     3
     4
     끝
-    
 
 ### [연습] while 문 작성하기
-> 사용자가 "안녕"이라고 입력할 때까지 인사하는 코드를 작성해보세요.
 
+> 사용자가 "안녕"이라고 입력할 때까지 인사하는 코드를 작성해보세요.
 
 ```python
 # 아래에 코드를 작성하세요.
@@ -567,7 +521,6 @@ print("끝")
     # '안녕?'을 출력하고
     # user_input에 사용자의 입력값을 받는 코드를 작성하세요.
 ```
-
 
 ```python
 user_input = input()
@@ -588,13 +541,13 @@ while user_input != '안녕':
     어흥 해바
     안녕?
     안녕
-    
 
 ### [실습] 합(Summation)
 
 > 1부터 사용자가 입력한 양의 정수까지의 총합을 구하는 코드를 작성해보세요.
 
 ---
+
 **[입력 예시]**
 
 10
@@ -603,11 +556,9 @@ while user_input != '안녕':
 
 55
 
-
 ```python
 # 아래에 코드를 작성하세요.
 ```
-
 
 ```python
 # num = int(input())
@@ -625,20 +576,19 @@ num_plus = 1
 while num_plus <= num:
     result += num_plus
     num_plus += 1
-    
+
 print(f'{result}')
 ```
 
     10
     55
-    
 
 ### [응용] 한자리 씩 출력하기
 
 > 사용자로부터 입력 받은 양의 정수의 각 자리 수를 1의 자리부터 차례대로 출력하는 코드를 작성해보세요.
 
-
 ---
+
 **[입력 예시]**
 
 185
@@ -651,11 +601,9 @@ print(f'{result}')
 
 1
 
-
 ```python
 # 아래에 코드를 작성하세요.
 ```
-
 
 ```python
 # 블로그 참조 및 본인 코드
@@ -670,8 +618,6 @@ while one_output > 0:
     8
     5
     1
-    
-
 
 ```python
 # 교수님 풀이
@@ -685,12 +631,9 @@ n //= 10 # 1
 
 n % 10 # ==> 1
 n //= 10 # 0
-
 ```
 
     0
-    
-
 
 ```python
 # 교수님 풀이
@@ -703,8 +646,6 @@ while n: # n != 0
     5
     8
     1
-    
-
 
 ```python
 #  while 안쓴 코드
@@ -717,8 +658,6 @@ for ch in n:
     5
     8
     1
-    
-
 
 ```python
 num = [1, 8, 5]
@@ -732,87 +671,48 @@ print(ret)
 ```
 
     185
-    
-
 
 ```python
 
 ```
-
 
 ```python
 num = [1, 8, 5] # 정수 => 185
 int(''.join(map(str, num))) # join을 이용하는건 파이썬에서만 가능
 ```
 
-
-
-
     185
-
-
-
 
 ```python
 # .join 사용법
 '-'.join(['ax', 'by', 'csdfasfd'])
 ```
 
-
-
-
     'ax-by-csdfasfd'
-
-
-
 
 ```python
 ''.join(['ax', 'by', 'csdfasfd'])
 ```
 
-
-
-
     'axbycsdfasfd'
-
-
-
 
 ```python
 'abcxxxxefghi'.replace('xxxx','0000')
 ```
 
-
-
-
     'abc0000efghi'
-
-
-
 
 ```python
 'a'.isupper() # 대문자인가 물어봄
 ```
 
-
-
-
     False
-
-
-
 
 ```python
 'a'.islower() # 소문자 인가 물어봄
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 # 아스키 코드
@@ -820,13 +720,7 @@ ch = 'x'
 'a' <= ch <= 'z'
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 # 문자의 ASCII 코드 값을 알고 싶을때 ord()
@@ -836,13 +730,7 @@ ord('A')
 chr(65)
 ```
 
-
-
-
     'A'
-
-
-
 
 ```python
 s = 'SsaFy SaMsung'
@@ -851,7 +739,6 @@ print(s)
 ```
 
     SSAFY SAMSUNG
-    
 
 ## `for` 문
 
@@ -860,6 +747,7 @@ print(s)
 ---
 
 ### 활용법
+
 - **문법**
 
 ```python
@@ -879,12 +767,10 @@ print('끝')
     <img src="https://user-images.githubusercontent.com/18046097/61180565-3a2c7800-a653-11e9-806a-28838248de31.png", alt="">
 </center>
 
-
 ```python
 # flowchart를 for문을 통해 코드로 작성해봅시다.
 # 아래에 코드를 작성하세요.
 ```
-
 
 ```python
 fruit = ['apple','mange','banana']
@@ -897,19 +783,20 @@ print('끝')
     mange
     banana
     끝
-    
 
 ![for animation](https://user-images.githubusercontent.com/18046097/61180563-3a2c7800-a653-11e9-8a7a-c7d6e6b30141.gif)
 
 ### [연습] for 문 작성하기
+
 > `for` 문을 활용하여 사용자가 입력한 문자를 한글자씩 출력해보세요.
 
 ---
+
 **[입력 예시]**
+
 ```
 문자를 입력하세요 : 안녕!
 ```
-
 
 **[출력 예시]**
 
@@ -919,21 +806,17 @@ print('끝')
 !
 ```
 
-
 ```python
 chars = input('문자를 입력하세요 : ')
 ```
 
     문자를 입력하세요 : 안녕하세요
-    
-
 
 ```python
 # 아래에 코드를 작성하세요.
 # for 문을 활용해봅시다.
 # 변수 char에 할당된 문자를 한글자씩 출력하는 for 반복문을 작성하세요.
 ```
-
 
 ```python
 for lst_char in chars:
@@ -945,26 +828,22 @@ for lst_char in chars:
     하
     세
     요
-    
 
 ### 문자열(String) 순회
 
 #### `range(문자열의 길이)`
-`range()`와 순회할 srting의 길이를 활용하여 index를 조작 가능합니다.
 
+`range()`와 순회할 srting의 길이를 활용하여 index를 조작 가능합니다.
 
 ```python
 chars = input('문자를 입력하세요 : ')
 ```
 
     문자를 입력하세요 : 안녕하세요
-    
-
 
 ```python
 # 위에서 사용자가 입력한 문자를 range를 활용하여 한 글자씩 출력하는 for 문을 작성해봅시다.
 ```
-
 
 ```python
 for i in range(len(chars)):
@@ -976,12 +855,10 @@ for i in range(len(chars)):
     하
     세
     요
-    
 
 ### 딕셔너리 순회(반복문 활용)
 
 딕셔너리에 `for` 문을 실행하면 기본적으로 다음과 같이 동작합니다.
-
 
 ```python
 # 딕셔너리를 반복문과 함께 사용해봅시다.
@@ -992,7 +869,6 @@ for i in range(len(chars)):
 grades = {'peter':  80, 'jake': 90}
 ```
 
-
 ```python
 # for문을 통해 딕셔너리 grades를 순회하면서 출력 값을 확인해봅시다.
 for student in grades:
@@ -1001,28 +877,24 @@ for student in grades:
 
     peter
     jake
-    
 
 딕셔너리의 **key**에 접근할 수 있으면, 이를 통해 **value**에도 접근할 수 있습니다.
 
 따라서 딕셔너리의 value를 출력하기 위해서는 아래와 같이 작성합니다.
 
-
 ```python
 # 위에서 출력한 학생 이름(key)을 활용하여 점수(value)를 출력해봅시다.
 ```
 
-
 ```python
 for score in grades:
     print(score, grades[score])
-    
+
 dicts = {'민수':80, '영희':70, '철수':85, '사라':75}
 ```
 
     peter 80
     jake 90
-    
 
 * dictionary에서 `for`를 활용하는 4가지 방법
 
@@ -1037,20 +909,18 @@ for key in dict:
 for key in dict.keys():
     print(key)
     print(dict[key])
-    
-    
+
+
 # 2. `.values()` 활용
 # 이 경우 key는 출력할 수 없음
 for val in dict.values():
     print(val)
 
-    
+
 # 3. `.items()` 활용
 for key, val in dict.items():
     print(key, val)
-
 ```
-
 
 ```python
 for key in dicts:
@@ -1066,8 +936,6 @@ for key in dicts:
     85
     사라
     75
-    
-
 
 ```python
 for key in dicts.keys():
@@ -1083,8 +951,6 @@ for key in dicts.keys():
     85
     사라
     75
-    
-
 
 ```python
 for val in dicts.values():
@@ -1095,8 +961,6 @@ for val in dicts.values():
     70
     85
     75
-    
-
 
 ```python
 for key,val in dicts.items():
@@ -1107,18 +971,19 @@ for key,val in dicts.items():
     영희 70
     철수 85
     사라 75
-    
 
 ### `enumerate()`
+
 인덱스(index)와 값(value)을 함께 활용 가능합니다.
 
 > `enumerate()`를 활용하면, 추가적인 변수를 활용할 수 있습니다.
-- `enumerate()`는 [내장 함수](https://docs.python.org/ko/3.6/library/functions.html) 중 하나이며, 다음과 같이 구성되어 있습니다.
->
-> <center>
-    <img src="https://user-images.githubusercontent.com/18046097/61180561-3993e180-a653-11e9-9558-085c9a0ad65d.png", alt="enumerate">
-</center>
 
+- `enumerate()`는 [내장 함수](https://docs.python.org/ko/3.6/library/functions.html) 중 하나이며, 다음과 같이 구성되어 있습니다.
+  
+  > <center>
+  >   <img src="https://user-images.githubusercontent.com/18046097/61180561-3993e180-a653-11e9-9558-085c9a0ad65d.png", alt="enumerate">
+  
+  </center>
 
 ```python
 # enumerate()를 활용해서 출력해봅시다.
@@ -1127,25 +992,13 @@ enumerate(members)
 list(enumerate(members))
 ```
 
-
-
-
     [(0, '민수'), (1, '영희'), (2, '철수')]
-
-
-
 
 ```python
 list(enumerate(members, start = 1))
 ```
 
-
-
-
     [(1, '민수'), (2, '영희'), (3, '철수')]
-
-
-
 
 ```python
 # enumerate() 에 의해 반환되는 인덱스와 값(value)를 함께 출력하는 for 반복문을 작성해봅시다.
@@ -1156,13 +1009,10 @@ for idx, member in enumerate(members):
     0 민수
     1 영희
     2 철수
-    
-
 
 ```python
 # enumerate()를 사용하였을 때 어떻게 표현이 되는지 확인해봅시다.
 ```
-
 
 ```python
 print(enumerate(members))
@@ -1171,13 +1021,10 @@ print(list(enumerate(members)))
 
     <enumerate object at 0x0000021E6E1347C0>
     [(0, '민수'), (1, '영희'), (2, '철수')]
-    
-
 
 ```python
 # 첫번쨰 항목의 type을 확인해봅시다.
 ```
-
 
 ```python
 print(list(enumerate(members))[0])
@@ -1186,10 +1033,8 @@ print(type(list(enumerate(members))[0]))
 
     (0, '민수')
     <class 'tuple'>
-    
 
 * 숫자를 1부터 카운트 할 수도 있습니다.
-
 
 ```python
 # enumerate() 에 의해 반환되는 인덱스가 1로 시작하여 카운트되는 for 반복문을 작성해봅시다.
@@ -1200,7 +1045,6 @@ for idx, member in enumerate(members, start=1):
     1 민수
     2 영희
     3 철수
-    
 
 ### List Comprehension
 
@@ -1221,8 +1065,8 @@ list(expression for 변수 in iterable)
 #### 세제곱 리스트
 
 > 다음의 리스트를 작성하세요.
-- 1~3까지의 숫자로 만든 세제곱 담긴 리스트 `cubic_list`
 
+- 1~3까지의 숫자로 만든 세제곱 담긴 리스트 `cubic_list`
 
 ```python
 # 1~3의 세제곱 리스트 만들기
@@ -1233,33 +1077,26 @@ print(cubic_list)
 ```
 
     [1, 8, 27]
-    
-
 
 ```python
 print(cubic_list)
 ```
 
     [1, 8, 27]
-    
-
 
 ```python
 # List comprehension을 활용하여 작성하세요.
 ```
 
-
 ```python
 cubic_list= [number ** 3 for number in range(1, 4)]
 ```
-
 
 ```python
 print(cubic_list)
 ```
 
     [1, 8, 27]
-    
 
 ### Dictionary comprehension
 
@@ -1268,6 +1105,7 @@ dictionary도 comprehension을 활용하여 만들 수 있습니다.
 ---
 
 #### 활용법
+
 `iterable`에서 `dict`를 생성할 수 있습니다.
 
 ```python
@@ -1275,7 +1113,6 @@ dictionary도 comprehension을 활용하여 만들 수 있습니다.
 
 dict({키: 값 for 요소 in iterable})
 ```
-
 
 ```python
 # 1~3의 세제곱 딕셔너리 만들기
@@ -1287,13 +1124,10 @@ print(cubic)
 ```
 
     {1: 1, 2: 8, 3: 27}
-    
-
 
 ```python
 # Dictionary comprehension을 활용하여 작성하세요.
 ```
-
 
 ```python
 cubic_dict = {number : number **3 for number in range(1, 4)}
@@ -1301,9 +1135,8 @@ print(cubic_dict)
 ```
 
     {1: 1, 2: 8, 3: 27}
-    
 
-###  [실습] for 문과 if 문 작성하기
+### [실습] for 문과 if 문 작성하기
 
 > 반복문과 조건문만 활용하여 1~30까지 숫자 중에 홀수만 출력해보세요.
 
@@ -1320,11 +1153,9 @@ print(cubic_dict)
 29
 ```
 
-
 ```python
 # 아래에 코드를 작성하세요.
 ```
-
 
 ```python
 for i in range(1, 30):
@@ -1353,21 +1184,18 @@ for i in range(1, 30):
     25
     27
     29
-    
 
 ## 반복제어(`break`, `continue`, `for-else`)
 
-### `break` 
+### `break`
 
 반복문을 종료합니다.
 
 * `for` 나 `while` 문에서 빠져나갑니다.
 
-
 ```python
 # while 문에서 break를 활용해봅시다.
 ```
-
 
 ```python
 # 종료 조건이 있는 while 문을 작성해봅시다.
@@ -1382,8 +1210,6 @@ while n < 3:
     0
     1
     2
-    
-
 
 ```python
 # 종료 조건이 없는 while 문을 break 를 활용해서 종료시키는 코드를 작성해봅시다.
@@ -1401,13 +1227,10 @@ while True:
     0
     1
     2
-    
-
 
 ```python
 # for 문에서도 break를 사용할 수 있습니다.
 ```
-
 
 ```python
 # 0부터 9까지 순회하는 for 반복문 안에서 
@@ -1422,7 +1245,6 @@ for i in range(10):
     0
     1
     0과 1만 필요해
-    
 
 ### [연습] `break` 활용하기
 
@@ -1440,13 +1262,11 @@ for i in range(10):
 
 잡았다!
 
-
 ```python
 rice = ['보리', '보리', '보리', '쌀', '보리']
 
 # 아래에 코드를 작성하세요.
 ```
-
 
 ```python
 for i in range(len(rice)):
@@ -1464,12 +1284,10 @@ for i in range(len(rice)):
     보리
     쌀
     잡았다
-    
 
 ### `continue`
 
 `continue`문은 continue 이후의 코드를 수행하지 않고, *다음 요소부터 계속(continue)하여* 반복을 수행합니다.
-
 
 ```python
 # continue 문을 확인해봅시다.
@@ -1477,7 +1295,6 @@ for i in range(len(rice)):
 # 짝수인 경우 continue하고,
 # 홀수인 경우 해당 숫자를 출력하는 코드를 작성하세요.
 ```
-
 
 ```python
 for i in range(6):
@@ -1490,7 +1307,6 @@ for i in range(6):
     1는 홀수다.
     3는 홀수다.
     5는 홀수다.
-    
 
 ### [연습] `continue` 문 작성하기
 
@@ -1509,13 +1325,11 @@ for i in range(6):
 
 31 살은 성인입니다.
 
-
 ```python
 ages = [10, 23, 8, 30, 25, 31]
 
 # 아래에 코드를 작성하세요.
 ```
-
 
 ```python
 for i in range(len(ages)):
@@ -1528,14 +1342,14 @@ for i in range(len(ages)):
     30살은 성인입니다.
     25살은 성인입니다.
     31살은 성인입니다.
-    
 
-### `pass` 
+### `pass`
+
 아무것도 하지 않습니다.
+
 * 들여쓰기 이후 문장이 필요하지만, 프로그램이 특별히 할 일이 없을 때 자리를 채우는 용도로 사용할 수 있습니다.
 
 `pass` 와 `continue` 차이
-
 
 ```python
 # pass
@@ -1551,13 +1365,10 @@ for i in range(4):
     1
     2
     3
-    
-
 
 ```python
 # 아래에 코드를 작성하세요.
 ```
-
 
 ```python
 # continue
@@ -1572,8 +1383,6 @@ for i in range(4):
     0
     1
     2
-    
-
 
 ```python
 # 아래에 코드을 작성하세요.
@@ -1582,8 +1391,8 @@ for i in range(4):
 ### `else`
 
 끝까지 반복문을 실행한 이후에 실행됩니다.
-- 반복문이 **`break` 문으로 종료될 때는 실행되지 않습니다.** (즉, `break`를 통해 중간에 종료되지 않은 경우만 실행)
 
+- 반복문이 **`break` 문으로 종료될 때는 실행되지 않습니다.** (즉, `break`를 통해 중간에 종료되지 않은 경우만 실행)
 
 ```python
 # break가 동작하지 않는 상황을 확인해봅시다.
@@ -1592,22 +1401,18 @@ for i in range(4):
 # 문자열 끝까지 순회해도 'b'가 없는 경우에는 'b가 없습니다.'를 출력하는 코드를 작성하세요.
 ```
 
-
 ```python
 # 아래에 코드를 작성하세요.
-char = 'apple'
+
 for char in 'apple':
     if char == 'b':
         print('b!')
         break
 else:
     print('b가 없습니다')
-    
 ```
 
     b가 없습니다
-    
-
 
 ```python
 # break가 동작하는 상황을 확인해봅시다.
@@ -1616,25 +1421,23 @@ else:
 # 문자열 끝까지 순회해도 'b'가 없는 경우에는 'b가 없습니다.'를 출력하는 코드를 작성하세요.
 ```
 
-
 ```python
 # 아래에 코드를 작성하세요.
-char = 'apple'
+
 for char in 'banana':
     if char == 'b':
         print('b!')
         break
 else:
     print('b가 없습니다')
-    
 ```
 
     b!
-    
 
 ### [연습] `for-else` 활용하기
 
 > 조건문과 반복문, break, else 를 통해서 아래의 코드와 동일한 코드를 작성하세요.
+
 * numbers 리스트에 4가 있을 경우 `True`를 출력하고, 없을 경우 `False`를 출력한다.
 
 ---
@@ -1643,14 +1446,11 @@ else:
 
 `False`
 
-
-
 ```python
 numbers = [1, 3, 7, 9]
 
 # 아래에 코드를 작성하세요.
 ```
-
 
 ```python
 for i in range(len(numbers)):
@@ -1662,8 +1462,6 @@ else:
 ```
 
     False
-    
-
 
 ```python
 # 컨테이너 자료형
@@ -1680,96 +1478,52 @@ else:
 # 5. 요소가 있는지 없는지 판단(멤버쉽 연산자)
 ```
 
-
 ```python
 # 멤버쉽 연산자 : 시퀀스 타입에 전부 적용됨(리스트,튜플,세트,딕셔너리 다 된다)
 'x' in 'asdfsdfsasdf' # 부분 문자열의 포함 여부
 ```
 
-
-
-
     False
-
-
-
 
 ```python
 'll' in 'hello'
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 '아이스' in '아이스아메리카노'
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 10 in [1, 2, 3, 10] # 리스트
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 10 in (1, 2, 3, 10) # 튜플
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 # 특히 set, dictionary 는 검색에 특화된 자료구조다.
 ```
 
-
 ```python
 10 in {1, 2, 3, 10} # 세트(set)
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 'jake' in {'peter': 80, 'jake': 90} # 딕셔너리는? 된다
 ```
 
-
-
-
     True
-
-
-
 
 ```python
 # 리스트 컴프리헨션
@@ -1788,8 +1542,6 @@ for val in lst: # 직접 값을 가져오기
     64
     81
     100
-    
-
 
 ```python
 for i in range(len(lst)) : # 0 ~ len(lst)-1
@@ -1806,8 +1558,6 @@ for i in range(len(lst)) : # 0 ~ len(lst)-1
     7 64
     8 81
     9 100
-    
-
 
 ```python
 

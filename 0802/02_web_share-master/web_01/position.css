@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box
+}
+body {
+  height: 3000px;
+}
+.box {
+  border : 1px solid black;
+}
+.parent {
+  width: 500px;
+  height: 500px;
+  margin-left: 100px;
+  /*기본값 static으로 설정되어 있음*/
+  position: relative;
+}/*relative로 설정되어 있으면 green도 부모를 중심으로 따라 움직임*/
+.child {
+  width: 100px;
+  height: 100px;
+}
+.red{
+  background-color: red;
+  position : fixed;
+  bottom: 50px;
+  right: 50px;
+}
+.blue{
+  background-color: blue;
+}
+.yellow{
+  background-color: yellow;
+  position : relative;
+  top : 100px;
+  left: 200px;
+}
+.green{
+  background-color: green;
+  position : absolute;
+  top: 50px;
+  left: 50px;
+}
+.gold{
+  background-color: gold;
+  position: sticky;
+  top : 0;
+}/*원래있던 위치에서 동일하게 움직이는데 0 에 걸리게 되면 부모가 사라질때 같이 사라짐*/

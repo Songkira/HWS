@@ -189,7 +189,7 @@ s + 'is fun'
 ```
 
 ```python
-x, y = 5, 5
+x = y = 5
 print(x, y)
 ```
 
@@ -339,6 +339,8 @@ print(5)
 ```python
 #print = 'hi'
 #print(5)
+
+TypeError: 'str' object is not callable
 ```
 
 ```python
@@ -368,7 +370,9 @@ del print
 ### input([prompt])
 
 * 사용자로부터 값을 즉시 입력 받을 수 있는 파이썬 내장함수입니다.
+
 * 대괄호([]) 안에 문자열을 입력하면 해당 문자열을 출력할 수 있습니다.
+  
   - 단, 대괄호는 생략합니다.
     
     ```python

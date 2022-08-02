@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div p {
+      color : blue;
+    }
+
+    div > p{
+      color: crimson;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>무슨색이 나올까요?</p>
+    <span>
+      <p>이건 두번째</p>
+    </span>
+    <div>
+      <p>세번째</p>
+      <span>뭘까요
+        <p>어떤 색이 나올까요</p>
+      </span>
+    </div>
+  </div>
+</body>
+</html>
+
+<!--자손 결합자(blue)는 div 하위의 모든 <p> 결합자 요소를 선택-->
+<!--자식 결합자(crimson)는 div 바로 아래의 <p> 결합자 요소를 선택-->
