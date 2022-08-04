@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div span{
+      color: red;
+    }
+
+    div > span {
+      color: burlywood;
+    }
+    
+    br ~ span {
+      color: blueviolet;
+    }
+
+    br + span {
+      color :darkorange;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <span>이건 빨강입니다.</span>
+    <p>이건 빨강이 아닙니다.</p>
+    <p>
+      <span>이건 빨강입니다.</span>
+    </p>
+    <br>
+    <span>태그의 앞에 있기 때문에 이건 보라가 아닙니다.</span>
+    <p>여기 문단이 있습니다.</p>
+    <b>그리고 코드도 있습니다.</b>
+    <span>br태그와 형제이기 때문에 이건 보라 입니다.</span>
+    <b>더 많은 코드가 있습니다.</b>
+    <span>이것도 br태그와 형제이기 때문에 보라 입니다.</span>
+  </div>
+</body>
+</html>

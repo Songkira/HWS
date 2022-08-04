@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>checkbox</p>
+        <input type="checkbox" id="html" name="language" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="python" name="language" value="python">
+        <label for="python">파이썬</label>
+        <input type="checkbox" id="java" name="language" value="java">
+        <label for="java">자바</label>
+        <hr>
+        <p>radio button</p>
+        <input type="radio" id="행복" name="attitude" value="행복">
+        <label for="행복">행복</label>
+        <input type="radio" id="슬픔" name="attitude" value="슬픔">
+        <label for="슬픔">슬픔</label>
+        <input type="radio" id="중립" name="attitude" value="중립">
+        <label for="중립">중립</label>
+    </div>
+    <hr>
+    <form action="" method="GET">
+        <div>
+            <label for="region">지역을 선택해 주세요.</label><br>
+            <select name="지역" id="region">
+                <option value="">선택</option>
+                <option value="서울">서울</option>
+                <option value="대전">대전</option>
+                <option value="광주">광주</option>
+                <option value="구미">구미</option>
+                <option value="강원" disabled>강원</option>
+            </select>
+        </div>
+        <input type="color" hidden><br>
+        <input type="date"><br>
+        <input type="range"><br>
+    </form>
+</body>
+</html>
