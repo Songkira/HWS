@@ -1,0 +1,32 @@
+/* 03_community.css */
+/* 아래에 코드를 작성해 주세요. */
+.container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 0.3rem;
+}
+
+.container > .row {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* @media (min-width:992px) {
+.hideen{
+  visibility:hidden ; 
+  }
+} */
+
+@media (max-width:991px) {/* 991이하 면 사라짐 */
+  .none{
+    display:none;
+    }
+  }
+
+@media (min-width:992px) {/* 992이상이면 사라짐 */
+  .None{
+    display: none;
+    }
+  }
+
+  
