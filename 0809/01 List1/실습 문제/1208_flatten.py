@@ -2,7 +2,7 @@ import sys; sys.stdin = open('1208.txt')
 
 T = 10
 
-for tc in range(1):
+for tc in range(T):
     N = int(input())
     arr = list(map(int, input().split()))
 
@@ -10,10 +10,10 @@ for tc in range(1):
     max_val = 0
     min_val = 99999
 
-    for i in range(1, len(arr)):
-        if arr[min_idx] >= arr[i]:
+    for i in range(len(arr)):
+        if arr[min_idx] > arr[i]:
             min_idx = i
-        if arr[max_idx] <= arr[i]:
+        if arr[max_idx] < arr[i]:
             max_idx = i
         if max_val < arr[i]:
             max_val = arr[i]
