@@ -2,56 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a67a2b9d-a018-4113-b787-45ff5ac77c58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../0808/practice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0808/view.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0810/0810_리스트/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0810/0810_리스트/데일리과제/달팽이.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/.idea/0811.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/00. 2d_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/00. 2차배열_순회연습.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/01. delta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/01_전치행렬.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/03. selection_sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/04. 부분집합.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/05. 이진탐색.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/sum_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/sum_output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/1209.sum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/1209.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/1210. Ladder1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/1210.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/4836.color_review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/4836.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/4836.색칠하기.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/4837.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/4837.부분집합합.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/4839.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/4839.이진탐색.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/4843.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/4843.특별한정렬.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/sample.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/02 List2/실습 문제/selection_sort.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/4831.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/4834.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/4835.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/eletronicBus_review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/gugan_sum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/sample_input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/구간합review.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../0811/숫자카드review.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Online_Algorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Online_Algorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 List1/실습 문제/4831.전기버스.py" beforeDir="false" afterPath="$PROJECT_DIR$/01 List1/실습 문제/4831.전기버스.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0810/0810_리스트/.idea/0810_리스트.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/0810_리스트/.idea/0810_리스트.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0810/0810_리스트/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/0810_리스트/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0810/0810_리스트/0810_review01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/0810_리스트/0810_review01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0810/0810_리스트/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/0810_리스트/데일리과제/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0810/0810_리스트/problem.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0810/0810_리스트/데일리과제/sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0810/0810_리스트/달팽이.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +96,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
   </component>
-  <component name="RunManager" selected="Python.4831.전기버스">
+  <component name="RunManager" selected="Python.4843.특별한정렬">
     <configuration name="1208_flatten-02" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Online_Algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -178,27 +131,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01 List1/실습 문제/1208_flatten.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="4828_min_max" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Online_Algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01 List1/실습 문제" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01 List1/실습 문제/4828_min_max.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,20 +181,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="4843.특별한정렬" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Online_Algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Algorithm_Online/0811/02 List2/실습 문제" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Algorithm_Online/0811/02 List2/실습 문제/4843.특별한정렬.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.1208_flatten-02" />
-      <item itemvalue="Python.1208_flatten" />
-      <item itemvalue="Python.4828_min_max" />
-      <item itemvalue="Python.4831.전기버스" />
       <item itemvalue="Python.4835_구간합" />
+      <item itemvalue="Python.1208_flatten" />
+      <item itemvalue="Python.1208_flatten-02" />
+      <item itemvalue="Python.4831.전기버스" />
+      <item itemvalue="Python.4843.특별한정렬" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.4843.특별한정렬" />
         <item itemvalue="Python.4831.전기버스" />
         <item itemvalue="Python.1208_flatten" />
         <item itemvalue="Python.1208_flatten-02" />
         <item itemvalue="Python.4835_구간합" />
-        <item itemvalue="Python.4828_min_max" />
       </list>
     </recent_temporary>
   </component>

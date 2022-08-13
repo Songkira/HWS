@@ -13,18 +13,18 @@
 #  str() 함수 사용않고, itoa()를 구현해 봅시다.
 # 양의 정수를 입력받아 문자열로 반환하는 함수
 # 내가 짜는 중...
-# def itoa(num):
-#     while num != 0: # 무한반복 활용잘하자..
-#         # print(num % 10, end=' ')
-#         num = num // 10
+def itoa(num):
+    while num != 0: # 무한반복 활용잘하자..
+        # print(num % 10, end=' ')
+        num = num // 10
 #     # chr(num) 하면 1234가 나와야함.
 #     i = ''
 #     for x in num:
 #         i = i * 10 + chr(ord(x)) - chr(ord('0'))
 #     return i
 #
-# val = itoa(1234)
-# print(type(val), val) # str, 1234
+val = itoa(1234)
+print(type(val), val) # str, 1234
 # # 음수를 변환할때 고려해야 할 것은?
 
 # ------------------------------------
