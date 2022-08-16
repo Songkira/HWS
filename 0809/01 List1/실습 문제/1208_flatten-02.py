@@ -10,7 +10,7 @@ for tc in range(T):
     max_val = 0
     min_val = 99999
 
-    for i in range(N):
+    for i in range(N): # 덤프 횟수 만큼
         for j in range(len(arr)): # arr 길이만큼 반복
             if arr[min_idx] > arr[j]: # arr[1] = 68 > arr[2] = 35
                 min_idx = j           # min_idx(1) = j(2) -> min_idx(2)
