@@ -13,3 +13,17 @@ for i in range(N-1): # N-2까지
     arr[minidx],arr[i] = arr[i], arr[minidx]
 
 print(arr)
+
+# 선택 정렬
+
+arr = [64, 25, 10, 22 ,11]
+N = len(arr)
+
+for i in range(0, N - 2 + 1):
+    min_idx = i
+    for j in range(i + 1, N):
+        if arr[min_idx] > arr[j]:
+            min_idx = j
+    arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+print(arr)

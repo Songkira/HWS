@@ -23,3 +23,5 @@ for i in range(0, N - 2 + 1):
     arr[i], arr[min_idx] = arr[min_idx], arr[i]
 
 print(arr)
+
+

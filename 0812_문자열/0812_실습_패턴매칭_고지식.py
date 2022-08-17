@@ -6,14 +6,16 @@ N = len(t) #  전체 텍스트의 길이
 def BruteForce(p, t):
     i = 0 # t의 인덱스
     j = 0 # p의 인덱스
-    while j < M and i < N:
+    while j < M and i < N: # 조건이 맞는 동안은 무한 반복/ 조건이 틀리면 중지 / j = M 등...
         if t[i] != p[j]: # 불일치 할 경우
             i = i - j # 원래 시작 위치로 돌리기 위해서
             j = -1
         i = i + 1
         j = j + 1
-    if j == M : return i - M # 검색 성공
-    else: return -1 # 검색 실패
+    if j == M :
+        return i - M # 검색 성공
+    else:
+        return -1 # 검색 실패
 
     # 일치하는 경우
     # i, j 사이좋게 증가
