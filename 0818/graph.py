@@ -70,15 +70,15 @@ visited = [0] * (V+1)
 # 매개변수는 매번 생기는거/ 실행될때마다 새로운 데이터
 def dfs(v): # v: 현재 방문할 정점 번호
     # 정점을 방문한다.
-    visited[v] = 1; print(v, end=' ')
+    visited[v] = 1#; print(v, end=' ')
     # v 의 방문하지 않은 정점들을 조사한다.
     for w in G[v]:
         if visited[w] == 0:
             dfs(w)
-    # print(w, end='')
+    return w
 
 dfs(1) # 시작점을 인자로 함수 호출
-
+print(visited)
 
 
 
