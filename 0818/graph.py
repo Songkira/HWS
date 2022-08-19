@@ -20,6 +20,7 @@
 # 예제는 0번부터라고 쓰임
 
 import sys; sys.stdin = open('graph_input.txt')
+# 깊이 우선 탐색
 
 # V, E  = 정점의 개수, 간선의 개수
 V, E = map(int, input().split())
