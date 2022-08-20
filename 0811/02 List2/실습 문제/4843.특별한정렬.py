@@ -42,7 +42,8 @@ for tc in range(1, int(input)+1):
     #                 idx = j
     #     arr[i], arr[idx] = arr[idx], arr[i] # arr[0], arr[idx] = arr[idx], arr[0]
 
-    # 마지막 줄 못적음
-    # arr.sort()
-    # for i in range(5):
-    #     print(arr[N -1 -i], arr[i], end ='')
+    print(f'#{tc}', end='')
+    for i in range(10):
+        print(f' {arr[i]}', end='')
+    print()
+
