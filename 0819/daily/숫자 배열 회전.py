@@ -15,7 +15,7 @@ for tc in range(1, int(input())+1):
             if len(word) == N:
                 new_90.append(word)
                 word = ''
-    # print(new_90)
+    print(new_90)
     for i in range(N-1,-1,-1):
         for j in range(N-1,-1,-1):
             word += arr[i][j]
@@ -36,7 +36,7 @@ for tc in range(1, int(input())+1):
     new.append(new_180)
     new.append(new_270)
     # print(new)
-
+    print(new)
     print(f'#{tc}')
     for i in range(N):
         for j in range(3):

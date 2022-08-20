@@ -26,3 +26,20 @@ def rect_traverse(r, c, M):
             if ans < ret:
                 ans = ret
     print(ans)
+
+#-----------------------------------------------
+    M = 3
+    r = c = 0
+    total = 0
+    while r < N:
+        for i in range(M):
+            for j in range(M):
+                total += arr[r + i][c + j]
+        if total != 45:
+            ans = 0
+            break
+        c += 3
+        total = 0
+        if c > N - M:
+            c = 0
+            r += 3
