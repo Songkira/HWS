@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="719107b2-e629-49da-b63e-f2091d24aff5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../0818/실습 문제/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../0818/실습 문제/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0818/실습 문제/1219.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../0818/실습 문제/1219.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0818/실습 문제/4866. 괄호검사.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0818/실습 문제/4866. 괄호검사.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0818/실습 문제/4866.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../0818/실습 문제/4866.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0818/실습 문제/4869. 종이붙이기.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0818/실습 문제/4869. 종이붙이기.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0818/실습 문제/4871. 그래프경로_DFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0818/실습 문제/4871. 그래프경로_DFS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../0818/실습 문제/4873. 반복문자 지우기.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0818/실습 문제/4873. 반복문자 지우기.py" afterDir="false" />
-    </list>
+    <list default="true" id="719107b2-e629-49da-b63e-f2091d24aff5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
