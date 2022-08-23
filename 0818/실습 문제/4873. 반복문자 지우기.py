@@ -1,6 +1,6 @@
 import sys; sys.stdin = open('4873.txt', 'r')
 
-for tc in range(1, int(input()) + 1):
+for tc in range(1, int(input())+1):
     word = list(input())
     N = len(word)
     top = -1
@@ -19,3 +19,14 @@ for tc in range(1, int(input()) + 1):
                 new.append(word[i])
     ans = len(new)
     print(f'#{tc} {ans}')
+    #
+    # for j in range(size):
+    #     if not stack:
+    #         stack.append(lst[j])
+    #
+    #     else:
+    #         if stack[-1] == lst[j]:
+    #             stack.pop()
+    #
+    #         else:
+    #             stack.append(lst[j])
