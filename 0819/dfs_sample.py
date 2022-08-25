@@ -23,9 +23,9 @@ while S:        # 빈 스택이 아닐동안 반복
     for w in G[v]:
         if not visited[w]:
         # (v --> w)
-        S.append(v)     # 지나온 정점 스택에 v를 기록
-        visited[w] = 1
-        v = w
+            S.append(v)     # 지나온 정점 스택에 v를 기록
+            visited[w] = 1
+            v = w
         break   # break 안걸면 인접 정점을 모두다 방문해버림
     else:       # for 문이 돌동안 break 안걸림 -> 더이상 v가 갈 곳이 없음
         v = S.pop()     # 이전에 방문한 정점으로 돌아감
