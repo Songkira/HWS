@@ -39,6 +39,33 @@ q = [0] * N
 front = 0
 rear = 0
 
+rear = (rear + 1) % N #순환 queue           # enqueue(10)
+q[rear] = 10
+print(q)
+
+rear = (rear + 1) % N #순환 queue           # enqueue(20)
+q[rear] = 20
+print(q)
+
+rear = (rear + 1) % N #순환 queue           # enqueue(30)
+q[rear] = 30
+print(q)
+
+front = (front + 1) % N             # dequque()
+print(q[front])
+
+front = (front + 1) % N             # dequque()
+print(q[front])
+
+front = (front + 1) % N             # dequque()
+print(q[front])
+# # 10
+# # 20
+# # 30
+
+# -------------------------------------------
+# 순환 큐가 아닐땐 40을 넣으면 index Error이 떴다.
+# 순환 큐인 지금은?
 # rear = (rear + 1) % N #순환 queue           # enqueue(10)
 # q[rear] = 10
 #
@@ -48,41 +75,17 @@ rear = 0
 # rear = (rear + 1) % N #순환 queue           # enqueue(30)
 # q[rear] = 30
 #
-# front = (front + 1) % N             # dequque()
-# print(q[front])
+# rear = (rear + 1) % N #순환 queue           # enqueue(40)
+# q[rear] = 40
 #
 # front = (front + 1) % N             # dequque()
 # print(q[front])
 #
 # front = (front + 1) % N             # dequque()
 # print(q[front])
-# # 10
-# # 20
-# # 30
-
-# -------------------------------------------
-# 순환 큐가 아닐땐 40을 넣으면 index Error이 떴다.
-# 순환 큐인 지금은?
-rear = (rear + 1) % N #순환 queue           # enqueue(10)
-q[rear] = 10
-
-rear = (rear + 1) % N #순환 queue           # enqueue(20)
-q[rear] = 20
-
-rear = (rear + 1) % N #순환 queue           # enqueue(30)
-q[rear] = 30
-
-rear = (rear + 1) % N #순환 queue           # enqueue(40)
-q[rear] = 40
-
-front = (front + 1) % N             # dequque()
-print(q[front])
-
-front = (front + 1) % N             # dequque()
-print(q[front])
-
-front = (front + 1) % N             # dequque()
-print(q[front])
+#
+# front = (front + 1) % N             # dequque()
+# print(q[front])
 # 40
 # 20
 # 30
