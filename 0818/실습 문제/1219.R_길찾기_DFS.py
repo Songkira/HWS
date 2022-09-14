@@ -1,4 +1,4 @@
-import sys; sys.stdin = open('1219.txt', 'r')
+    import sys; sys.stdin = open('1219.txt', 'r')
 
 for tc in range(1):
     # 테스트 케이스의 번호, 길의 총 개수
