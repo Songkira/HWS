@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Catch</h1>
+<!--views의 dictionary인 context를 통해서 value값 msg를 출력 -->
+<p>{{  msg  }}받았음</p>
+<hr>
+<a href="{% url 'articles:throw' %}">다시 던지러 가기</a>
+
+{% endblock content %}

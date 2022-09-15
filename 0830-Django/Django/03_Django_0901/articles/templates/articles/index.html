@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Index</h1>
+<a href="/articles/new/">NEW</a>
+<!-- 앱네임을 썼을 경우 app_name: 붙이기-->
+<a href="{% url 'articles:new' %}"></a>
+<hr>
+{% for article in articles %}
+<p> 글번호 : {{ article.pk }}</p>
+<p> 글제목 : {{ article.title }}</p>
+<!--문자열의 개행문자를 -->
+<p> 글내용 : {{ article.content|linebreaks }}</p>
+<a href="{% url 'articles:detail' article.pk %}">[Detail]</a>
+<hr>
+{% endfor %}
+
+{% endblock content %}
+
