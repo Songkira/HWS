@@ -12,6 +12,42 @@ def abc(x):
         # print('#', end=' ')
         abc(x+1)
         # print('#', end=' ')
-    #print('#', end=' ')
+    # print('#', end=' ')
 
 abc(0)
+
+# ---------------------
+# '#'이 놓일수 있는 자리
+def abc(x):
+    # print('#', end=' ')
+    if x==2:
+        # print('#', end=' ')
+        return
+    # print('#', end=' ')
+    for i in range(2):
+        # print('#', end=' ')
+        abc(x + 1)
+        # print('#', end =' ')
+    # print('#', end=' ')
+abc(0)
+# ----------------------
+# def abc(x):
+#
+#     if x==2:
+#         return
+#     print(x)
+#     abc(x+1)
+#     print(x)
+#
+# abc(0)
+# --------------------
+# # 2번 호출
+# def abc(x):
+#     print('#', end=' ')
+#     if x==2:
+#         return
+#     for i in range(2):
+#         abc(x + 1)
+#         print('#', end =' ')
+#
+# abc(0)
