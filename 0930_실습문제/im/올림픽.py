@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 '''
 4 3
 1 1 2 0
@@ -20,7 +22,15 @@ country = [list(map(int, input().split())) for _ in range(N)]
 # 가중치를 줄까?
 # [i][1]=금메달은 *3, [i][2]=은메달은 *2, [i][3]=동메달은 *1
 # 점수가 같으면 공동 등수 (예시 1 2 2 4)
+score = [0] * (N+1)
 
 for i in range(N):
-    for j in range(1, N):
+    sumV = country[i][1] * 3 + country[i][2] * 2 + country[i][3] * 1
+    rank = country[i][0]
+    score[rank] = sumV
+
+print(score)
+lst = sorted(score)
+print(lst)
+
 
