@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a67a2b9d-a018-4113-b787-45ff5ac77c58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 List1/01_gravity.py" beforeDir="false" afterPath="$PROJECT_DIR$/01 List1/01_gravity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 List1/03.버블정렬_단계.py" beforeDir="false" afterPath="$PROJECT_DIR$/01 List1/03.버블정렬_단계.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 List1/실습 문제/1208_flatten-02.py" beforeDir="false" afterPath="$PROJECT_DIR$/01 List1/실습 문제/1208_flatten-02.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 List1/실습 문제/4828_min_max.py" beforeDir="false" afterPath="$PROJECT_DIR$/01 List1/실습 문제/4828_min_max.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 List1/실습 문제/4834_숫자카드.py" beforeDir="false" afterPath="$PROJECT_DIR$/01 List1/실습 문제/4834_숫자카드.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 List1/실습 문제/4835_구간합.py" beforeDir="false" afterPath="$PROJECT_DIR$/01 List1/실습 문제/4835_구간합.py" afterDir="false" />
-    </list>
+    <list default="true" id="a67a2b9d-a018-4113-b787-45ff5ac77c58" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,17 +212,15 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.버블정렬_연습" />
-      <item itemvalue="Python.숫자를정렬하자" />
-      <item itemvalue="Python.카운팅정렬_연습" />
       <item itemvalue="Python.4828_min_max" />
       <item itemvalue="Python.4834_숫자카드" />
+      <item itemvalue="Python.숫자를정렬하자" />
+      <item itemvalue="Python.버블정렬_연습" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.4834_숫자카드" />
         <item itemvalue="Python.4828_min_max" />
-        <item itemvalue="Python.카운팅정렬_연습" />
         <item itemvalue="Python.숫자를정렬하자" />
         <item itemvalue="Python.버블정렬_연습" />
       </list>
