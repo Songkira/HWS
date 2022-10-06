@@ -19,17 +19,19 @@
   {% endif %}
   <a href="{% url 'articles:index' %}">[back]</a>
   <hr>
-  <form action="{% url 'articles:create_comment' article.pk %}" method="POST">
-    {% csrf_token %}
-    {{ comment_form.as_p }}
-    <button>댓글등록</button>
-  </form>
+  {% if request.user.is_authenticated %}
+    <form action="{% url 'articles:comment_create' article.pk %}" method="POST">
+      {% csrf_token %}
+      {{ comment_form.as_p }}
+      <button>댓글등록</button>
+    </form>
+  {% endif %}
   
   <ul>
     {% for comment in comments %}
       <li>{{ comment.author }} - {{ comment.content }}</li>
       {% if user == comment.author %}
-        <form action="{% url 'articles:delete_comment' article.pk comment.pk%}" method="POST">
+        <form action="{% url 'articles:delete_comment' article.pk comment.pk %}" method="POST">
           {% csrf_token %}
           <button>댓글삭제</button>
         </form>

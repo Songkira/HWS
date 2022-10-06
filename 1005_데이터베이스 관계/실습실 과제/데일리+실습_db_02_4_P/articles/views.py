@@ -21,7 +21,9 @@ def create(request):
     if request.method == 'POST':
         form = ArticleForm(request.POST)
         if form.is_valid():
-            article = form.save()
+            article = form.save(commit=False)
+            article.author = request.user
+            article.save()
             return redirect('articles:detail', article.pk)
     else:
         form = ArticleForm()
@@ -35,9 +37,11 @@ def create(request):
 def detail(request, pk):
     article = get_object_or_404(Article, pk=pk)
     comment_form = CommentForm()
+    comments = article.comment_set.all()
     context = {
         'article': article,
         'comment_form': comment_form,
+        'comments': comments,
     }
     return render(request, 'articles/detail.html', context)
 
@@ -90,6 +94,7 @@ def comment_create(request, pk):
     
     context = {
         'comment_form': comment_form,
+        'article': article,
     }
     return render(request, 'articles/detail.html', context)
 
