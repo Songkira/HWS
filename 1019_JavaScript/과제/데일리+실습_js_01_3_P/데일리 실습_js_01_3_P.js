@@ -399,9 +399,18 @@ const movieInfo = {
   "total_pages": 500,
   "total_results": 10000
 }
-
-// for (let i = 0; movieInfo['results'].length === i-1; i++){
-//     console.log(movieInfo['results'].original_title)
+// const movieVoteFilter = function (movie) {
+//     return movie.vote_average >= 8.0
 // }
 
-console.log(movieInfo['results'].original_title)
+const movies = movieInfo['results'].filter((movie) => movie.vote_average >= 8.0).map((movie) => movie.title)
+
+console.log(movies)
+
+// const movielength = movieInfo['results'].length
+// for (let i = 0; i < movielength - 1; i++) {
+//     console.log(result)
+// }
+
+// console.log(movieInfo['results'].length) // 20
+// console.log(movieInfo['results'][1].original_title)
