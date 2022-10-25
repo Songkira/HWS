@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+    const input = document.createElement('input')
+    input.setAttribute('type', 'text')
+    input.setAttribute('id', 'inputname')
+    const inputsubmit = document.createElement('input')
+    inputsubmit.setAttribute('type', 'submit')
+    inputsubmit.setAttribute('value', 'Add')
+
+    const formTag = document.createElement('form')
+    const ul = document.createElement('ul')
+
+    const bodyTag = document.querySelector('body')
+
+    bodyTag.appendChild(formTag)
+    bodyTag.appendChild(ul)
+    formTag.appendChild(input)
+    formTag.appendChild(inputsubmit)
+
+    formTag.addEventListener('submit', function (event) {
+      
+      event.preventDefault()
+
+      const inputTag = document.querySelector('#inputname')
+      const data = inputTag.value
+      // console.log(data)
+
+      const liTag = document.createElement('li')
+      liTag.innerText = data
+
+      const ulTag = document.querySelector('ul')
+      ulTag.appendChild(liTag)
+
+      event.target.reset()
+    })
+
+  </script>
+
+</body>
+</html>

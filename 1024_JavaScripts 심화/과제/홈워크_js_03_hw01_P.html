@@ -7,9 +7,18 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <div>
+
+  </div>
   <script>
     // 이곳에 코드를 작성합니다.
+    const aTag = document.createElement('a')
+    aTag.setAttribute('href', 'https://www.ssafy.com/')
+    aTag.setAttribute('onclick', 'return false')
+    aTag.innerText = 'SSAFY'
+
+    const divTag = document.querySelector('div')
+    divTag.appendChild(aTag)
 
   </script>
 </body>

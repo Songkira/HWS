@@ -61,6 +61,23 @@
 
   <script>
     // 여기에 Javascript를 작성해 주세요
+    // const Username = document.querySelector('#username')
+    // const password = document.querySelector('#password')
+    // const zips = [ Username, password ]
+    const inputs = document.querySelectorAll('input')
+    
+    setFunc = function (input) {
+      // console.log(input)
+      input.setAttribute('class', 'myInputs')
+    }
+
+    inputs.forEach(setFunc)
+
+    const button = document.querySelector('button')
+    button.setAttribute('class', 'myButton')
+    button.innerText = 'Log In'
+
+
   </script>
 </body>
 </html>
