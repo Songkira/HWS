@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    const BASE_URL = 'https://api.themoviedb.org/3/movie/popular'
+
+    // function MovieSearch () {
+      
+    axios({
+      url: BASE_URL,
+      method: 'get',
+      params: {
+        api_key: 'ca158273547c25b0e40e27f43a977c06',
+        language: 'ko-KR',
+        page: 2,
+      },
+    })
+    .then(res => {
+      console.log(res)
+      const movies = res.data.results
+      for (let movie of movies) {
+        if(movie.vote_average >= 8.0)
+          console.log(movie.title)
+      }
+    })      
+    // }
+
+
+  </script>
+  
+</body>
+</html>
