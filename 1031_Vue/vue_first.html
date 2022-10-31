@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    .red {
+      color: crimson;
+    }
+  </style>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="app">
+    <h1>{{ title }}</h1>  <!-- 제목입니다. 검정 -->
+    <h1 class="red">{{ title }}</h1>  <!-- 제목입니다. 빨강 -->
+    <h1 v-bind:class="red">{{ title }}</h1>  <!-- 제목입니다. 검정 -->
+    <h1 v-bind:class="myFunc()">{{ title }}</h1>  <!-- 제목입니다. 빨강 -->
+    <h1 v-bind:class="[red, 'blue']">{{ title }}</h1>  <!-- 제목입니다. 검정 -->
+    <h1 v-bind:class="{'red': true, 'blue': false}">{{ title }}</h1>  <!-- 제목입니다. 빨강 -->
+    <h1 v-bind:class="{'red-color': isRed, blue: false}">{{ title }}</h1>  <!-- 제목입니다. 검정 -->
+
+    <p>{{ 'title' }}</p>  <!-- title -->
+    <p>title</p>          <!-- title -->
+    
+    <p>{{ 1+2 }}</p>      <!-- 3 -->
+    <p>{{ myFunc() }}</p> <!-- 10 -->
+    <!-- <button v-on:click></button> -->
+    <button @click="num++">+</button>
+    <p>{{num}}</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '.app',
+      data: {
+        title: '제목입니다.',
+        red: 'red-color',
+        isRed: true,
+        num: 0,
+      },
+      methods: {
+        myFunc() {
+          return 'red'
+        },
+      },
+
+    })
+
+  </script>
+</body>
+
+</html>
