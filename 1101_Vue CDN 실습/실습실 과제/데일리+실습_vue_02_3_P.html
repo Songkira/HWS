@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .done {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Todo List</h1>
+  <div id="app">
+    <input type="text" v-model="inputText">
+    <button @click="addTodo">+</button>
+    <ul>
+      <li v-for="todo in todos" :key="todo.id">
+        <input type="checkbox" @click="toggleTodo(todo)">
+        <span :class="{done:todo.completed}">{{ todo.title }}</span>
+      </li>
+    </ul>
+    <button @click="deleteTodo">완료 목록 삭제</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue ({
+      el: '#app',
+      data: {
+        inputText: '',
+        todos: [
+          { title: '밥먹기', completed: false, id: new Date().getTime()},
+          { title: '롤하기', completed: false, id: new Date().getTime() + 1},
+          { title: '낮잠자기', completed: false, id: new Date().getTime() + 2},
+        ]
+      },
+      methods: {
+        deleteTodo: function () {
+          // console.log('delete')
+          this.todos = this.todos.filter(todo => {
+            return !todo.completed
+          })
+        },
+        toggleTodo: function (todo) {
+          // console.log('click checkbox')
+          // console.log(todo.title)
+          todo.completed = !todo.completed
+          console.log(this.todos)
+        },
+        addTodo: function(str) {
+          // console.log('click')
+          if (!this.inputText.trim()) {
+            alert('내용을 입력해 주세요!')
+          } else {
+            const todo = {
+              title: this.inputText,
+              completed: false,
+              id: new Date().getTime(),
+            }
+            this.todos.push(todo)
+          }
+          this.inputText = ''
+        }
+      },
+    })
+  </script>
+
+</body>
+</html>
