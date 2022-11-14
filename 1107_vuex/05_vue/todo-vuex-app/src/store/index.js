@@ -49,11 +49,11 @@ export default new Vuex.Store({
         return todo
       })
     },
-    // LOAD_TODOS(state) {
-    //   const localStorageTodos = localStorage.getItem("todos")
-    //   const parsedTodos = JSON.parse(localStorageTodos)
-    //   state.todos = parsedTodos
-    // },
+    LOAD_TODOS(state) {
+      const localStorageTodos = localStorage.getItem("todos")
+      const parsedTodos = JSON.parse(localStorageTodos)
+      state.todos = parsedTodos
+    },
   },
   actions: {
     createTodo(context, todoTitle) {
@@ -77,9 +77,9 @@ export default new Vuex.Store({
     //   const jsonTodos = JSON.stringify(context.state.todos)
     //   localStorage.setItem('todos', jsonTodos)
     // },
-    // loadTodos(context) {
-    //   context.commit('LOAD_TODOS')
-    // },
+    loadTodos(context) {
+      context.commit('LOAD_TODOS')
+    },
   },
   modules: {
   }
